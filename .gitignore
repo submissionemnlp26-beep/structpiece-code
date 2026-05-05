@@ -14,3 +14,4 @@ uv.lock
 build/
 compile_commands.json
 cpp/compile_commands.json
+*.zip

@@ -30,7 +30,7 @@ BPE-Hindi/
 │
 ├── datasets/                      # Cleaned corpora for all 9 languages
 │   # Note: Due to size constraints, datasets are hosted on Zenodo.
-│   # Please download from: [Anonymous Zenodo Link Here]
+│   # Please download from: https://zenodo.org/records/20033927
 │   # and place the .txt files in this directory.
 │   ├── hindi_raw.txt
 │   ├── arabic_clean.txt

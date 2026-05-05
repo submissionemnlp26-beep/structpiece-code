@@ -1,0 +1,9 @@
+torch
+transformers
+datasets
+tokenizers
+accelerate
+deepspeed
+smolagents
+flash-attn
+evaluate

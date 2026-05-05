@@ -1,0 +1,227 @@
+{
+  "config": {
+    "vocab_size": 4000,
+    "max_steps": 500,
+    "d_model": 256,
+    "n_heads": 4,
+    "n_layers": 2,
+    "block_size": 128,
+    "batch_size": 32,
+    "train_lines": 2000,
+    "seed": 42,
+    "lr": 0.0005,
+    "corpus": "experiments/english_sample.txt"
+  },
+  "table1_main_results": [
+    {
+      "language": "English",
+      "tokenizer": "MorphTokenizer",
+      "avg_loss": 4.2236,
+      "avg_ppl": 68.3
+    },
+    {
+      "language": "English",
+      "tokenizer": "SP-BPE",
+      "avg_loss": 6.6565,
+      "avg_ppl": 777.8
+    },
+    {
+      "language": "English",
+      "tokenizer": "SP-Unigram",
+      "avg_loss": 5.8645,
+      "avg_ppl": 352.3
+    }
+  ],
+  "table2_token_efficiency": [
+    {
+      "language": "English",
+      "tokenizer": "MorphTokenizer",
+      "tokens_per_512chars": 256.4,
+      "chars_per_512tokens": 1022.4,
+      "tokens_per_word": 2.655
+    },
+    {
+      "language": "English",
+      "tokenizer": "SP-BPE",
+      "tokens_per_512chars": 141.9,
+      "chars_per_512tokens": 1847.5,
+      "tokens_per_word": 1.469
+    },
+    {
+      "language": "English",
+      "tokenizer": "SP-Unigram",
+      "tokens_per_512chars": 156.7,
+      "chars_per_512tokens": 1672.4,
+      "tokens_per_word": 1.623
+    }
+  ],
+  "table3_total_tokens": [
+    {
+      "language": "English",
+      "tokenizer": "MorphTokenizer",
+      "total_tokens": 237640,
+      "total_chars": 474518,
+      "total_words": 89518
+    },
+    {
+      "language": "English",
+      "tokenizer": "SP-BPE",
+      "total_tokens": 131504,
+      "total_chars": 474518,
+      "total_words": 89518
+    },
+    {
+      "language": "English",
+      "tokenizer": "SP-Unigram",
+      "total_tokens": 145269,
+      "total_chars": 474518,
+      "total_words": 89518
+    }
+  ],
+  "table6_cross_language": [
+    {
+      "language": "English",
+      "script": "Latin",
+      "morphology": "Analytic",
+      "bpe_ppl": 777.8,
+      "morph_ppl": 68.3,
+      "ppl_reduction_pct": 91.2
+    }
+  ],
+  "table8_speed": [
+    {
+      "language": "English",
+      "morph_ms_per_1kch": 0.21,
+      "morph_std": 0.03,
+      "sp_bpe_ms_per_1kch": 0.21,
+      "sp_bpe_std": 0.01,
+      "overhead_pct": 0.0
+    }
+  ],
+  "table7_qualitative_english": [
+    {
+      "word": "archaeologists",
+      "bpe_tokens": [
+        "▁archaeolog",
+        "ists"
+      ],
+      "bpe_count": 2,
+      "morph_tokens": [
+        "archaeolog",
+        "ists"
+      ],
+      "morph_count": 2
+    },
+    {
+      "word": "unbelievably",
+      "bpe_tokens": [
+        "▁un",
+        "b",
+        "el",
+        "ie",
+        "v",
+        "ably"
+      ],
+      "bpe_count": 6,
+      "morph_tokens": [
+        "un",
+        "beli",
+        "ev",
+        "ab",
+        "ly"
+      ],
+      "morph_count": 5
+    },
+    {
+      "word": "internationalization",
+      "bpe_tokens": [
+        "▁international",
+        "ization"
+      ],
+      "bpe_count": 2,
+      "morph_tokens": [
+        "inter",
+        "national",
+        "ization"
+      ],
+      "morph_count": 3
+    },
+    {
+      "word": "disenfranchisement",
+      "bpe_tokens": [
+        "▁dis",
+        "en",
+        "f",
+        "ranch",
+        "is",
+        "ement"
+      ],
+      "bpe_count": 6,
+      "morph_tokens": [
+        "dis",
+        "en",
+        "f",
+        "ran",
+        "ch",
+        "isement"
+      ],
+      "morph_count": 6
+    },
+    {
+      "word": "playing",
+      "bpe_tokens": [
+        "▁playing"
+      ],
+      "bpe_count": 1,
+      "morph_tokens": [
+        "playing"
+      ],
+      "morph_count": 1
+    },
+    {
+      "word": "characterization",
+      "bpe_tokens": [
+        "▁character",
+        "ization"
+      ],
+      "bpe_count": 2,
+      "morph_tokens": [
+        "character",
+        "ization"
+      ],
+      "morph_count": 2
+    }
+  ],
+  "per_tokenizer": {
+    "MorphTokenizer": {
+      "final_loss": 4.1961212158203125,
+      "final_ppl": 66.42817015393275,
+      "avg_loss": 4.223566484451294,
+      "avg_ppl": 68.27655785469669,
+      "total_tokens": 237640,
+      "total_chars": 474518,
+      "total_words": 89518,
+      "history_len": 500
+    },
+    "SP-BPE": {
+      "final_loss": 6.599254131317139,
+      "final_ppl": 734.5471091846795,
+      "avg_loss": 6.656525797843933,
+      "avg_ppl": 777.8438505839657,
+      "total_tokens": 131504,
+      "total_chars": 474518,
+      "total_words": 89518,
+      "history_len": 500
+    },
+    "SP-Unigram": {
+      "final_loss": 5.71436882019043,
+      "final_ppl": 303.1927737453291,
+      "avg_loss": 5.864525985717774,
+      "avg_ppl": 352.31511412475436,
+      "total_tokens": 145269,
+      "total_chars": 474518,
+      "total_words": 89518,
+      "history_len": 500
+    }
+  }
+}

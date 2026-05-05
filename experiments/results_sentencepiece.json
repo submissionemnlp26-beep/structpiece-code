@@ -1,0 +1,82 @@
+[
+  {
+    "tokenizer": "SP-BPE",
+    "model_type": "bpe",
+    "vocab_size": 1000,
+    "tokens_per_word": 2.107,
+    "bytes_per_token": 6.195,
+    "speed_tok_per_sec": 2257662.19,
+    "total_tokens": 605859,
+    "total_words": 287497
+  },
+  {
+    "tokenizer": "SP-BPE",
+    "model_type": "bpe",
+    "vocab_size": 2000,
+    "tokens_per_word": 1.772,
+    "bytes_per_token": 7.369,
+    "speed_tok_per_sec": 1799435.76,
+    "total_tokens": 509357,
+    "total_words": 287497
+  },
+  {
+    "tokenizer": "SP-BPE",
+    "model_type": "bpe",
+    "vocab_size": 4000,
+    "tokens_per_word": 1.519,
+    "bytes_per_token": 8.597,
+    "speed_tok_per_sec": 1482259.99,
+    "total_tokens": 436595,
+    "total_words": 287497
+  },
+  {
+    "tokenizer": "SP-BPE",
+    "model_type": "bpe",
+    "vocab_size": 8000,
+    "tokens_per_word": 1.336,
+    "bytes_per_token": 9.769,
+    "speed_tok_per_sec": 1258138.61,
+    "total_tokens": 384224,
+    "total_words": 287497
+  },
+  {
+    "tokenizer": "SP-UNIGRAM",
+    "model_type": "unigram",
+    "vocab_size": 1000,
+    "tokens_per_word": 2.102,
+    "bytes_per_token": 6.212,
+    "speed_tok_per_sec": 4637800.36,
+    "total_tokens": 604268,
+    "total_words": 287497
+  },
+  {
+    "tokenizer": "SP-UNIGRAM",
+    "model_type": "unigram",
+    "vocab_size": 2000,
+    "tokens_per_word": 1.758,
+    "bytes_per_token": 7.428,
+    "speed_tok_per_sec": 3986438.43,
+    "total_tokens": 505301,
+    "total_words": 287497
+  },
+  {
+    "tokenizer": "SP-UNIGRAM",
+    "model_type": "unigram",
+    "vocab_size": 4000,
+    "tokens_per_word": 1.536,
+    "bytes_per_token": 8.499,
+    "speed_tok_per_sec": 3569862.06,
+    "total_tokens": 441635,
+    "total_words": 287497
+  },
+  {
+    "tokenizer": "SP-UNIGRAM",
+    "model_type": "unigram",
+    "vocab_size": 8000,
+    "tokens_per_word": 1.398,
+    "bytes_per_token": 9.342,
+    "speed_tok_per_sec": 3208855.39,
+    "total_tokens": 401797,
+    "total_words": 287497
+  }
+]

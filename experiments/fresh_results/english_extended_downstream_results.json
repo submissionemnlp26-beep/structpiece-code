@@ -1,0 +1,18 @@
+{
+  "pos": [
+    {
+      "language": "English",
+      "morph_acc": 86.8,
+      "sp_acc": 86.7,
+      "delta": 0.1
+    }
+  ],
+  "classif": [
+    {
+      "language": "English",
+      "morph_acc": 37.3,
+      "sp_acc": 37.1,
+      "delta": 0.3
+    }
+  ]
+}

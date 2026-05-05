@@ -1,0 +1,80 @@
+[
+  {
+    "language": "English",
+    "tokenizer": "StructPiece",
+    "vocab_size": 4000,
+    "avg_loss": 9.0286,
+    "token_ppl": 8338.2,
+    "bpc": 6.5232,
+    "tok_per_word": 2.655,
+    "tok_per_char": 0.5008,
+    "inflation_vs_bpe": 1.81,
+    "steps": 500,
+    "time_seconds": 30.4
+  },
+  {
+    "language": "English",
+    "tokenizer": "SP-BPE",
+    "vocab_size": 4000,
+    "avg_loss": 13.1718,
+    "token_ppl": 525339.5,
+    "bpc": 5.2657,
+    "tok_per_word": 1.469,
+    "tok_per_char": 0.2771,
+    "inflation_vs_bpe": 1.0,
+    "steps": 500,
+    "time_seconds": 28.2
+  },
+  {
+    "language": "English",
+    "tokenizer": "SP-Unigram",
+    "vocab_size": 4000,
+    "avg_loss": 11.9864,
+    "token_ppl": 160556.3,
+    "bpc": 5.2933,
+    "tok_per_word": 1.623,
+    "tok_per_char": 0.3061,
+    "inflation_vs_bpe": 1.1,
+    "steps": 500,
+    "time_seconds": 28.7
+  },
+  {
+    "language": "Hindi",
+    "tokenizer": "StructPiece",
+    "vocab_size": 4000,
+    "avg_loss": 9.3752,
+    "token_ppl": 11792.3,
+    "bpc": 6.8493,
+    "tok_per_word": 2.574,
+    "tok_per_char": 0.5064,
+    "inflation_vs_bpe": 1.69,
+    "steps": 500,
+    "time_seconds": 29.6
+  },
+  {
+    "language": "Hindi",
+    "tokenizer": "SP-BPE",
+    "vocab_size": 4000,
+    "avg_loss": 13.4996,
+    "token_ppl": 729124.7,
+    "bpc": 5.8466,
+    "tok_per_word": 1.526,
+    "tok_per_char": 0.3002,
+    "inflation_vs_bpe": 1.0,
+    "steps": 500,
+    "time_seconds": 28.9
+  },
+  {
+    "language": "Hindi",
+    "tokenizer": "SP-Unigram",
+    "vocab_size": 4000,
+    "avg_loss": 12.7702,
+    "token_ppl": 351582.6,
+    "bpc": 5.8255,
+    "tok_per_word": 1.608,
+    "tok_per_char": 0.3162,
+    "inflation_vs_bpe": 1.05,
+    "steps": 500,
+    "time_seconds": 31.9
+  }
+]

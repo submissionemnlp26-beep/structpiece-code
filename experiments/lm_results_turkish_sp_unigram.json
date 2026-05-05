@@ -1,0 +1,3009 @@
+{
+  "tokenizer": "sp",
+  "vocab_size": 8000,
+  "time_seconds": 38.217270851135254,
+  "final_loss": 8.153959274291992,
+  "final_perplexity": 3477.1187147485075,
+  "history": [
+    {
+      "step": 0,
+      "loss": 167.92462158203125,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 1,
+      "loss": 165.46661376953125,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 2,
+      "loss": 164.35015869140625,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 3,
+      "loss": 161.27493286132812,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 4,
+      "loss": 158.1664581298828,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 5,
+      "loss": 154.33042907714844,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 6,
+      "loss": 150.30247497558594,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 7,
+      "loss": 145.33843994140625,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 8,
+      "loss": 140.3760528564453,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 9,
+      "loss": 133.2875518798828,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 10,
+      "loss": 125.12840270996094,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 11,
+      "loss": 115.70562744140625,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 12,
+      "loss": 105.76549530029297,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 13,
+      "loss": 94.15607452392578,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 14,
+      "loss": 83.17668151855469,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 15,
+      "loss": 72.67589569091797,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 16,
+      "loss": 64.61337280273438,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 17,
+      "loss": 59.202205657958984,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 18,
+      "loss": 54.175621032714844,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 19,
+      "loss": 51.300201416015625,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 20,
+      "loss": 49.134254455566406,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 21,
+      "loss": 46.943382263183594,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 22,
+      "loss": 46.04697036743164,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 23,
+      "loss": 44.23587417602539,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 24,
+      "loss": 42.45221710205078,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 25,
+      "loss": 41.42848587036133,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 26,
+      "loss": 40.705169677734375,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 27,
+      "loss": 39.582359313964844,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 28,
+      "loss": 38.85496139526367,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 29,
+      "loss": 38.39958572387695,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 30,
+      "loss": 37.74304962158203,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 31,
+      "loss": 36.93932342529297,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 32,
+      "loss": 36.882476806640625,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 33,
+      "loss": 36.43708038330078,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 34,
+      "loss": 35.57803726196289,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 35,
+      "loss": 35.28318786621094,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 36,
+      "loss": 35.12960433959961,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 37,
+      "loss": 34.89058303833008,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 38,
+      "loss": 34.1013069152832,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 39,
+      "loss": 33.44715881347656,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 40,
+      "loss": 33.240516662597656,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 41,
+      "loss": 33.00865936279297,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 42,
+      "loss": 32.47318649291992,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 43,
+      "loss": 31.83589744567871,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 44,
+      "loss": 31.906452178955078,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 45,
+      "loss": 31.09935760498047,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 46,
+      "loss": 30.979135513305664,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 47,
+      "loss": 30.762069702148438,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 48,
+      "loss": 29.903671264648438,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 49,
+      "loss": 30.114398956298828,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 50,
+      "loss": 29.711395263671875,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 51,
+      "loss": 29.04179573059082,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 52,
+      "loss": 28.728179931640625,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 53,
+      "loss": 28.79946517944336,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 54,
+      "loss": 28.407480239868164,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 55,
+      "loss": 28.389883041381836,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 56,
+      "loss": 28.508975982666016,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 57,
+      "loss": 27.812820434570312,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 58,
+      "loss": 27.762367248535156,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 59,
+      "loss": 27.546070098876953,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 60,
+      "loss": 27.346355438232422,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 61,
+      "loss": 26.746843338012695,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 62,
+      "loss": 26.470523834228516,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 63,
+      "loss": 27.067264556884766,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 64,
+      "loss": 26.730262756347656,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 65,
+      "loss": 26.210914611816406,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 66,
+      "loss": 26.008913040161133,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 67,
+      "loss": 25.650203704833984,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 68,
+      "loss": 25.866249084472656,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 69,
+      "loss": 25.235565185546875,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 70,
+      "loss": 25.181652069091797,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 71,
+      "loss": 24.815589904785156,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 72,
+      "loss": 24.749961853027344,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 73,
+      "loss": 24.272375106811523,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 74,
+      "loss": 24.14265251159668,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 75,
+      "loss": 24.225994110107422,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 76,
+      "loss": 23.860267639160156,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 77,
+      "loss": 23.963520050048828,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 78,
+      "loss": 23.244686126708984,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 79,
+      "loss": 23.24596405029297,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 80,
+      "loss": 23.399499893188477,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 81,
+      "loss": 23.178668975830078,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 82,
+      "loss": 22.670534133911133,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 83,
+      "loss": 22.544042587280273,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 84,
+      "loss": 22.633464813232422,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 85,
+      "loss": 22.537628173828125,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 86,
+      "loss": 22.392574310302734,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 87,
+      "loss": 22.225332260131836,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 88,
+      "loss": 22.07978057861328,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 89,
+      "loss": 21.946125030517578,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 90,
+      "loss": 21.616352081298828,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 91,
+      "loss": 20.962017059326172,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 92,
+      "loss": 21.798076629638672,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 93,
+      "loss": 20.8708438873291,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 94,
+      "loss": 20.74306297302246,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 95,
+      "loss": 20.44619369506836,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 96,
+      "loss": 20.620594024658203,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 97,
+      "loss": 20.49667739868164,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 98,
+      "loss": 20.017757415771484,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 99,
+      "loss": 20.014238357543945,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 100,
+      "loss": 19.76603889465332,
+      "perplexity": 383956143.5995034,
+      "epoch": 0
+    },
+    {
+      "step": 101,
+      "loss": 20.2777156829834,
+      "perplexity": Infinity,
+      "epoch": 0
+    },
+    {
+      "step": 102,
+      "loss": 19.689311981201172,
+      "perplexity": 355598193.413335,
+      "epoch": 0
+    },
+    {
+      "step": 103,
+      "loss": 19.470888137817383,
+      "perplexity": 285824383.8834611,
+      "epoch": 0
+    },
+    {
+      "step": 104,
+      "loss": 19.01993179321289,
+      "perplexity": 182075463.40779963,
+      "epoch": 0
+    },
+    {
+      "step": 105,
+      "loss": 19.651958465576172,
+      "perplexity": 342560370.91407186,
+      "epoch": 0
+    },
+    {
+      "step": 106,
+      "loss": 19.46953582763672,
+      "perplexity": 285438121.8911303,
+      "epoch": 0
+    },
+    {
+      "step": 107,
+      "loss": 19.24759292602539,
+      "perplexity": 228624831.12622595,
+      "epoch": 0
+    },
+    {
+      "step": 108,
+      "loss": 18.790573120117188,
+      "perplexity": 144757881.22959492,
+      "epoch": 0
+    },
+    {
+      "step": 109,
+      "loss": 19.154111862182617,
+      "perplexity": 208221268.30764166,
+      "epoch": 0
+    },
+    {
+      "step": 110,
+      "loss": 18.655990600585938,
+      "perplexity": 126530076.98346816,
+      "epoch": 0
+    },
+    {
+      "step": 111,
+      "loss": 18.38449478149414,
+      "perplexity": 96446092.32814229,
+      "epoch": 0
+    },
+    {
+      "step": 112,
+      "loss": 18.727893829345703,
+      "perplexity": 135963065.46397343,
+      "epoch": 0
+    },
+    {
+      "step": 113,
+      "loss": 18.6854190826416,
+      "perplexity": 130308996.29376355,
+      "epoch": 0
+    },
+    {
+      "step": 114,
+      "loss": 18.767333984375,
+      "perplexity": 141432620.91711995,
+      "epoch": 0
+    },
+    {
+      "step": 115,
+      "loss": 18.41655731201172,
+      "perplexity": 99588505.7731967,
+      "epoch": 0
+    },
+    {
+      "step": 116,
+      "loss": 18.451717376708984,
+      "perplexity": 103152329.07360566,
+      "epoch": 0
+    },
+    {
+      "step": 117,
+      "loss": 18.100933074951172,
+      "perplexity": 72633229.0104736,
+      "epoch": 0
+    },
+    {
+      "step": 118,
+      "loss": 17.662601470947266,
+      "perplexity": 46856554.974911444,
+      "epoch": 0
+    },
+    {
+      "step": 119,
+      "loss": 18.00757598876953,
+      "perplexity": 66159297.39047341,
+      "epoch": 0
+    },
+    {
+      "step": 120,
+      "loss": 17.814002990722656,
+      "perplexity": 54515901.66375258,
+      "epoch": 0
+    },
+    {
+      "step": 121,
+      "loss": 17.391315460205078,
+      "perplexity": 35723363.06173242,
+      "epoch": 0
+    },
+    {
+      "step": 122,
+      "loss": 17.4364013671875,
+      "perplexity": 37370843.29068909,
+      "epoch": 0
+    },
+    {
+      "step": 123,
+      "loss": 17.656326293945312,
+      "perplexity": 46563442.42714593,
+      "epoch": 0
+    },
+    {
+      "step": 124,
+      "loss": 17.320104598999023,
+      "perplexity": 33267935.69395991,
+      "epoch": 0
+    },
+    {
+      "step": 125,
+      "loss": 17.51827049255371,
+      "perplexity": 40559090.464630075,
+      "epoch": 0
+    },
+    {
+      "step": 126,
+      "loss": 17.33390235900879,
+      "perplexity": 33730140.046271086,
+      "epoch": 0
+    },
+    {
+      "step": 127,
+      "loss": 17.475677490234375,
+      "perplexity": 38867830.625009805,
+      "epoch": 0
+    },
+    {
+      "step": 128,
+      "loss": 16.833248138427734,
+      "perplexity": 20444984.188801058,
+      "epoch": 0
+    },
+    {
+      "step": 129,
+      "loss": 16.927108764648438,
+      "perplexity": 22456906.513674393,
+      "epoch": 0
+    },
+    {
+      "step": 130,
+      "loss": 16.87353515625,
+      "perplexity": 21285468.253984954,
+      "epoch": 0
+    },
+    {
+      "step": 131,
+      "loss": 17.311847686767578,
+      "perplexity": 32994376.201368287,
+      "epoch": 0
+    },
+    {
+      "step": 132,
+      "loss": 16.68341636657715,
+      "perplexity": 17600121.556030087,
+      "epoch": 0
+    },
+    {
+      "step": 133,
+      "loss": 16.228038787841797,
+      "perplexity": 11162145.972135391,
+      "epoch": 0
+    },
+    {
+      "step": 134,
+      "loss": 16.461380004882812,
+      "perplexity": 14095695.215702655,
+      "epoch": 0
+    },
+    {
+      "step": 135,
+      "loss": 16.81873321533203,
+      "perplexity": 20150370.138247084,
+      "epoch": 0
+    },
+    {
+      "step": 136,
+      "loss": 16.674514770507812,
+      "perplexity": 17444147.62157392,
+      "epoch": 0
+    },
+    {
+      "step": 137,
+      "loss": 16.13925552368164,
+      "perplexity": 10213853.302395888,
+      "epoch": 0
+    },
+    {
+      "step": 138,
+      "loss": 15.860862731933594,
+      "perplexity": 7731881.0257182075,
+      "epoch": 0
+    },
+    {
+      "step": 139,
+      "loss": 15.831647872924805,
+      "perplexity": 7509262.923548418,
+      "epoch": 0
+    },
+    {
+      "step": 140,
+      "loss": 16.074277877807617,
+      "perplexity": 9571283.560672102,
+      "epoch": 0
+    },
+    {
+      "step": 141,
+      "loss": 15.744083404541016,
+      "perplexity": 6879684.866282109,
+      "epoch": 0
+    },
+    {
+      "step": 142,
+      "loss": 15.883941650390625,
+      "perplexity": 7912399.551102399,
+      "epoch": 0
+    },
+    {
+      "step": 143,
+      "loss": 15.79594612121582,
+      "perplexity": 7245898.344975248,
+      "epoch": 0
+    },
+    {
+      "step": 144,
+      "loss": 15.519393920898438,
+      "perplexity": 5495246.044565082,
+      "epoch": 0
+    },
+    {
+      "step": 145,
+      "loss": 15.622903823852539,
+      "perplexity": 6094539.862880624,
+      "epoch": 0
+    },
+    {
+      "step": 146,
+      "loss": 15.428691864013672,
+      "perplexity": 5018752.04432029,
+      "epoch": 0
+    },
+    {
+      "step": 147,
+      "loss": 15.270966529846191,
+      "perplexity": 4286437.515052917,
+      "epoch": 0
+    },
+    {
+      "step": 148,
+      "loss": 15.50136661529541,
+      "perplexity": 5397069.15595299,
+      "epoch": 0
+    },
+    {
+      "step": 149,
+      "loss": 15.051850318908691,
+      "perplexity": 3442988.213212765,
+      "epoch": 0
+    },
+    {
+      "step": 150,
+      "loss": 14.968671798706055,
+      "perplexity": 3168192.5150386575,
+      "epoch": 0
+    },
+    {
+      "step": 151,
+      "loss": 14.808249473571777,
+      "perplexity": 2698615.6400324656,
+      "epoch": 0
+    },
+    {
+      "step": 152,
+      "loss": 15.207098007202148,
+      "perplexity": 4021228.4850300765,
+      "epoch": 0
+    },
+    {
+      "step": 153,
+      "loss": 14.803925514221191,
+      "perplexity": 2686972.1268820837,
+      "epoch": 0
+    },
+    {
+      "step": 154,
+      "loss": 14.946134567260742,
+      "perplexity": 3097588.821389976,
+      "epoch": 0
+    },
+    {
+      "step": 155,
+      "loss": 14.95443344116211,
+      "perplexity": 3123402.283600492,
+      "epoch": 0
+    },
+    {
+      "step": 156,
+      "loss": 14.81399154663086,
+      "perplexity": 2714155.8620424275,
+      "epoch": 0
+    },
+    {
+      "step": 157,
+      "loss": 14.563819885253906,
+      "perplexity": 2113423.886341495,
+      "epoch": 0
+    },
+    {
+      "step": 158,
+      "loss": 14.394865036010742,
+      "perplexity": 1784885.8757729651,
+      "epoch": 0
+    },
+    {
+      "step": 159,
+      "loss": 14.844210624694824,
+      "perplexity": 2797427.0016631135,
+      "epoch": 0
+    },
+    {
+      "step": 160,
+      "loss": 14.3383150100708,
+      "perplexity": 1686751.4364050808,
+      "epoch": 0
+    },
+    {
+      "step": 161,
+      "loss": 14.367183685302734,
+      "perplexity": 1736155.3982249533,
+      "epoch": 0
+    },
+    {
+      "step": 162,
+      "loss": 14.787458419799805,
+      "perplexity": 2643087.8183408864,
+      "epoch": 0
+    },
+    {
+      "step": 163,
+      "loss": 14.50990104675293,
+      "perplexity": 2002488.162913613,
+      "epoch": 0
+    },
+    {
+      "step": 164,
+      "loss": 14.606098175048828,
+      "perplexity": 2204691.560124177,
+      "epoch": 0
+    },
+    {
+      "step": 165,
+      "loss": 13.991095542907715,
+      "perplexity": 1191943.2815793839,
+      "epoch": 0
+    },
+    {
+      "step": 166,
+      "loss": 14.255060195922852,
+      "perplexity": 1552008.0955597123,
+      "epoch": 0
+    },
+    {
+      "step": 167,
+      "loss": 14.015555381774902,
+      "perplexity": 1221457.507313126,
+      "epoch": 0
+    },
+    {
+      "step": 168,
+      "loss": 14.145992279052734,
+      "perplexity": 1391638.348561254,
+      "epoch": 0
+    },
+    {
+      "step": 169,
+      "loss": 14.025216102600098,
+      "perplexity": 1233314.8503114607,
+      "epoch": 0
+    },
+    {
+      "step": 170,
+      "loss": 13.711398124694824,
+      "perplexity": 901123.975410594,
+      "epoch": 0
+    },
+    {
+      "step": 171,
+      "loss": 13.815614700317383,
+      "perplexity": 1000104.1477761118,
+      "epoch": 0
+    },
+    {
+      "step": 172,
+      "loss": 13.598423957824707,
+      "perplexity": 804860.2652755509,
+      "epoch": 0
+    },
+    {
+      "step": 173,
+      "loss": 13.735559463500977,
+      "perplexity": 923161.4929909451,
+      "epoch": 0
+    },
+    {
+      "step": 174,
+      "loss": 13.824922561645508,
+      "perplexity": 1009456.4358771417,
+      "epoch": 0
+    },
+    {
+      "step": 175,
+      "loss": 13.655618667602539,
+      "perplexity": 852235.9189029635,
+      "epoch": 0
+    },
+    {
+      "step": 176,
+      "loss": 13.465723037719727,
+      "perplexity": 704837.8375803182,
+      "epoch": 0
+    },
+    {
+      "step": 177,
+      "loss": 13.659584045410156,
+      "perplexity": 855622.0655409594,
+      "epoch": 0
+    },
+    {
+      "step": 178,
+      "loss": 13.5010347366333,
+      "perplexity": 730171.5143069532,
+      "epoch": 0
+    },
+    {
+      "step": 179,
+      "loss": 13.500468254089355,
+      "perplexity": 729758.0020248151,
+      "epoch": 0
+    },
+    {
+      "step": 180,
+      "loss": 13.294772148132324,
+      "perplexity": 594081.7101932812,
+      "epoch": 0
+    },
+    {
+      "step": 181,
+      "loss": 13.502079010009766,
+      "perplexity": 730934.4112467499,
+      "epoch": 0
+    },
+    {
+      "step": 182,
+      "loss": 13.021244049072266,
+      "perplexity": 451912.58725008083,
+      "epoch": 0
+    },
+    {
+      "step": 183,
+      "loss": 12.999789237976074,
+      "perplexity": 442320.1578924595,
+      "epoch": 0
+    },
+    {
+      "step": 184,
+      "loss": 13.160442352294922,
+      "perplexity": 519406.63490167796,
+      "epoch": 0
+    },
+    {
+      "step": 185,
+      "loss": 12.962238311767578,
+      "perplexity": 426018.610862365,
+      "epoch": 0
+    },
+    {
+      "step": 186,
+      "loss": 12.981510162353516,
+      "perplexity": 434308.40110688517,
+      "epoch": 0
+    },
+    {
+      "step": 187,
+      "loss": 13.113561630249023,
+      "perplexity": 495618.43741224485,
+      "epoch": 0
+    },
+    {
+      "step": 188,
+      "loss": 13.243036270141602,
+      "perplexity": 564127.8956679951,
+      "epoch": 0
+    },
+    {
+      "step": 189,
+      "loss": 12.524855613708496,
+      "perplexity": 275090.5550976707,
+      "epoch": 0
+    },
+    {
+      "step": 190,
+      "loss": 12.908809661865234,
+      "perplexity": 403854.3862365662,
+      "epoch": 0
+    },
+    {
+      "step": 191,
+      "loss": 12.873310089111328,
+      "perplexity": 389769.21600275283,
+      "epoch": 0
+    },
+    {
+      "step": 192,
+      "loss": 12.703338623046875,
+      "perplexity": 328843.9572122901,
+      "epoch": 0
+    },
+    {
+      "step": 193,
+      "loss": 12.618389129638672,
+      "perplexity": 302062.47011128924,
+      "epoch": 0
+    },
+    {
+      "step": 194,
+      "loss": 12.58842658996582,
+      "perplexity": 293146.1561173609,
+      "epoch": 0
+    },
+    {
+      "step": 195,
+      "loss": 12.59643840789795,
+      "perplexity": 295504.2233367644,
+      "epoch": 0
+    },
+    {
+      "step": 196,
+      "loss": 12.89818286895752,
+      "perplexity": 399585.4321286638,
+      "epoch": 0
+    },
+    {
+      "step": 197,
+      "loss": 12.497156143188477,
+      "perplexity": 267575.25776472763,
+      "epoch": 0
+    },
+    {
+      "step": 198,
+      "loss": 12.393964767456055,
+      "perplexity": 241340.666299261,
+      "epoch": 0
+    },
+    {
+      "step": 199,
+      "loss": 12.516369819641113,
+      "perplexity": 272766.06979759486,
+      "epoch": 0
+    },
+    {
+      "step": 200,
+      "loss": 12.609596252441406,
+      "perplexity": 299418.1146892153,
+      "epoch": 0
+    },
+    {
+      "step": 201,
+      "loss": 12.156566619873047,
+      "perplexity": 190339.88470095416,
+      "epoch": 0
+    },
+    {
+      "step": 202,
+      "loss": 12.066381454467773,
+      "perplexity": 173925.34848968548,
+      "epoch": 0
+    },
+    {
+      "step": 203,
+      "loss": 12.428359031677246,
+      "perplexity": 249785.80052349562,
+      "epoch": 0
+    },
+    {
+      "step": 204,
+      "loss": 12.1663818359375,
+      "perplexity": 192217.31039204352,
+      "epoch": 0
+    },
+    {
+      "step": 205,
+      "loss": 11.847146987915039,
+      "perplexity": 139685.25441926278,
+      "epoch": 0
+    },
+    {
+      "step": 206,
+      "loss": 12.02505874633789,
+      "perplexity": 166884.7521597784,
+      "epoch": 0
+    },
+    {
+      "step": 207,
+      "loss": 12.067785263061523,
+      "perplexity": 174169.67784426556,
+      "epoch": 0
+    },
+    {
+      "step": 208,
+      "loss": 11.92476749420166,
+      "perplexity": 150959.5945460216,
+      "epoch": 0
+    },
+    {
+      "step": 209,
+      "loss": 11.934557914733887,
+      "perplexity": 152444.81104361126,
+      "epoch": 0
+    },
+    {
+      "step": 210,
+      "loss": 12.299455642700195,
+      "perplexity": 219576.42810175326,
+      "epoch": 0
+    },
+    {
+      "step": 211,
+      "loss": 11.854222297668457,
+      "perplexity": 140677.0754452094,
+      "epoch": 0
+    },
+    {
+      "step": 212,
+      "loss": 11.93268871307373,
+      "perplexity": 152160.1270984662,
+      "epoch": 0
+    },
+    {
+      "step": 213,
+      "loss": 11.961816787719727,
+      "perplexity": 156657.4396949744,
+      "epoch": 0
+    },
+    {
+      "step": 214,
+      "loss": 11.731898307800293,
+      "perplexity": 124479.7471052044,
+      "epoch": 0
+    },
+    {
+      "step": 215,
+      "loss": 11.717710494995117,
+      "perplexity": 122726.12122917314,
+      "epoch": 0
+    },
+    {
+      "step": 216,
+      "loss": 11.725858688354492,
+      "perplexity": 123730.20256429864,
+      "epoch": 0
+    },
+    {
+      "step": 217,
+      "loss": 11.798206329345703,
+      "perplexity": 133013.55633569468,
+      "epoch": 0
+    },
+    {
+      "step": 218,
+      "loss": 11.535947799682617,
+      "perplexity": 102328.93941663,
+      "epoch": 0
+    },
+    {
+      "step": 219,
+      "loss": 11.575484275817871,
+      "perplexity": 106455.70645802273,
+      "epoch": 0
+    },
+    {
+      "step": 220,
+      "loss": 11.452938079833984,
+      "perplexity": 94177.64138904642,
+      "epoch": 0
+    },
+    {
+      "step": 221,
+      "loss": 11.41761302947998,
+      "perplexity": 90908.88584696554,
+      "epoch": 0
+    },
+    {
+      "step": 222,
+      "loss": 11.42395305633545,
+      "perplexity": 91487.08157610247,
+      "epoch": 0
+    },
+    {
+      "step": 223,
+      "loss": 11.5174560546875,
+      "perplexity": 100454.0868355767,
+      "epoch": 0
+    },
+    {
+      "step": 224,
+      "loss": 11.557538032531738,
+      "perplexity": 104562.2673280514,
+      "epoch": 0
+    },
+    {
+      "step": 225,
+      "loss": 11.095611572265625,
+      "perplexity": 65881.40905479867,
+      "epoch": 0
+    },
+    {
+      "step": 226,
+      "loss": 11.258365631103516,
+      "perplexity": 77525.76650391975,
+      "epoch": 0
+    },
+    {
+      "step": 227,
+      "loss": 11.386938095092773,
+      "perplexity": 88162.59817572864,
+      "epoch": 0
+    },
+    {
+      "step": 228,
+      "loss": 11.17142105102539,
+      "perplexity": 71070.03306208794,
+      "epoch": 0
+    },
+    {
+      "step": 229,
+      "loss": 11.308025360107422,
+      "perplexity": 81472.86997816856,
+      "epoch": 0
+    },
+    {
+      "step": 230,
+      "loss": 11.250398635864258,
+      "perplexity": 76910.57296726425,
+      "epoch": 0
+    },
+    {
+      "step": 231,
+      "loss": 11.122993469238281,
+      "perplexity": 67710.29188209325,
+      "epoch": 0
+    },
+    {
+      "step": 232,
+      "loss": 11.738460540771484,
+      "perplexity": 125299.29830784656,
+      "epoch": 0
+    },
+    {
+      "step": 233,
+      "loss": 11.003101348876953,
+      "perplexity": 60060.12056093929,
+      "epoch": 0
+    },
+    {
+      "step": 234,
+      "loss": 10.984781265258789,
+      "perplexity": 58969.831715442306,
+      "epoch": 0
+    },
+    {
+      "step": 235,
+      "loss": 11.435787200927734,
+      "perplexity": 92576.18451821165,
+      "epoch": 0
+    },
+    {
+      "step": 236,
+      "loss": 11.1539306640625,
+      "perplexity": 69837.79822737051,
+      "epoch": 0
+    },
+    {
+      "step": 237,
+      "loss": 11.030438423156738,
+      "perplexity": 61724.63637559984,
+      "epoch": 0
+    },
+    {
+      "step": 238,
+      "loss": 11.091232299804688,
+      "perplexity": 65593.52723099237,
+      "epoch": 0
+    },
+    {
+      "step": 239,
+      "loss": 11.01220703125,
+      "perplexity": 60609.50641263582,
+      "epoch": 0
+    },
+    {
+      "step": 240,
+      "loss": 10.71749496459961,
+      "perplexity": 45138.68708734928,
+      "epoch": 0
+    },
+    {
+      "step": 241,
+      "loss": 11.11368179321289,
+      "perplexity": 67082.72197888188,
+      "epoch": 0
+    },
+    {
+      "step": 242,
+      "loss": 11.365461349487305,
+      "perplexity": 86289.34022788377,
+      "epoch": 0
+    },
+    {
+      "step": 243,
+      "loss": 11.003030776977539,
+      "perplexity": 60055.882153710256,
+      "epoch": 0
+    },
+    {
+      "step": 244,
+      "loss": 11.118881225585938,
+      "perplexity": 67432.42238920892,
+      "epoch": 0
+    },
+    {
+      "step": 245,
+      "loss": 11.287825584411621,
+      "perplexity": 79843.6466496307,
+      "epoch": 0
+    },
+    {
+      "step": 246,
+      "loss": 11.069133758544922,
+      "perplexity": 64159.90478692102,
+      "epoch": 0
+    },
+    {
+      "step": 247,
+      "loss": 10.794103622436523,
+      "perplexity": 48732.606471672916,
+      "epoch": 0
+    },
+    {
+      "step": 248,
+      "loss": 10.995018005371094,
+      "perplexity": 59576.5908765431,
+      "epoch": 0
+    },
+    {
+      "step": 249,
+      "loss": 10.940415382385254,
+      "perplexity": 56410.770320545606,
+      "epoch": 0
+    },
+    {
+      "step": 250,
+      "loss": 10.68191909790039,
+      "perplexity": 43561.06814147401,
+      "epoch": 0
+    },
+    {
+      "step": 251,
+      "loss": 10.844474792480469,
+      "perplexity": 51250.19964372933,
+      "epoch": 0
+    },
+    {
+      "step": 252,
+      "loss": 10.56324291229248,
+      "perplexity": 38686.38128453524,
+      "epoch": 0
+    },
+    {
+      "step": 253,
+      "loss": 10.520736694335938,
+      "perplexity": 37076.42842826909,
+      "epoch": 0
+    },
+    {
+      "step": 254,
+      "loss": 10.912416458129883,
+      "perplexity": 54853.23583003768,
+      "epoch": 0
+    },
+    {
+      "step": 255,
+      "loss": 10.562883377075195,
+      "perplexity": 38672.4746681431,
+      "epoch": 0
+    },
+    {
+      "step": 256,
+      "loss": 10.358892440795898,
+      "perplexity": 31536.23372688365,
+      "epoch": 0
+    },
+    {
+      "step": 257,
+      "loss": 10.440223693847656,
+      "perplexity": 34208.303769171565,
+      "epoch": 0
+    },
+    {
+      "step": 258,
+      "loss": 10.442627906799316,
+      "perplexity": 34290.64676152857,
+      "epoch": 0
+    },
+    {
+      "step": 259,
+      "loss": 10.398490905761719,
+      "perplexity": 32810.074800538874,
+      "epoch": 0
+    },
+    {
+      "step": 260,
+      "loss": 10.235872268676758,
+      "perplexity": 27885.783017697257,
+      "epoch": 0
+    },
+    {
+      "step": 261,
+      "loss": 10.375018119812012,
+      "perplexity": 32048.899340595246,
+      "epoch": 0
+    },
+    {
+      "step": 262,
+      "loss": 10.637499809265137,
+      "perplexity": 41668.461774034826,
+      "epoch": 0
+    },
+    {
+      "step": 263,
+      "loss": 10.314834594726562,
+      "perplexity": 30176.977998685026,
+      "epoch": 0
+    },
+    {
+      "step": 264,
+      "loss": 10.299562454223633,
+      "perplexity": 29719.612316776973,
+      "epoch": 0
+    },
+    {
+      "step": 265,
+      "loss": 10.424154281616211,
+      "perplexity": 33662.989607669144,
+      "epoch": 0
+    },
+    {
+      "step": 266,
+      "loss": 10.430983543395996,
+      "perplexity": 33893.66976703452,
+      "epoch": 0
+    },
+    {
+      "step": 267,
+      "loss": 10.306755065917969,
+      "perplexity": 29934.14454651258,
+      "epoch": 0
+    },
+    {
+      "step": 268,
+      "loss": 10.277362823486328,
+      "perplexity": 29067.1172691068,
+      "epoch": 0
+    },
+    {
+      "step": 269,
+      "loss": 10.478885650634766,
+      "perplexity": 35556.76280076416,
+      "epoch": 0
+    },
+    {
+      "step": 270,
+      "loss": 10.297816276550293,
+      "perplexity": 29667.7618765046,
+      "epoch": 0
+    },
+    {
+      "step": 271,
+      "loss": 10.380277633666992,
+      "perplexity": 32217.90502499037,
+      "epoch": 0
+    },
+    {
+      "step": 272,
+      "loss": 10.249252319335938,
+      "perplexity": 28261.4035139842,
+      "epoch": 0
+    },
+    {
+      "step": 273,
+      "loss": 10.13815975189209,
+      "perplexity": 25289.883975514265,
+      "epoch": 0
+    },
+    {
+      "step": 274,
+      "loss": 10.161320686340332,
+      "perplexity": 25882.457104969948,
+      "epoch": 0
+    },
+    {
+      "step": 275,
+      "loss": 9.942955017089844,
+      "perplexity": 20805.13306239816,
+      "epoch": 0
+    },
+    {
+      "step": 276,
+      "loss": 10.251385688781738,
+      "perplexity": 28321.75988706599,
+      "epoch": 0
+    },
+    {
+      "step": 277,
+      "loss": 10.146690368652344,
+      "perplexity": 25506.54509622123,
+      "epoch": 0
+    },
+    {
+      "step": 278,
+      "loss": 10.122220993041992,
+      "perplexity": 24889.98998626604,
+      "epoch": 0
+    },
+    {
+      "step": 279,
+      "loss": 10.15291976928711,
+      "perplexity": 25665.93150992644,
+      "epoch": 0
+    },
+    {
+      "step": 280,
+      "loss": 10.053850173950195,
+      "perplexity": 23245.11250201623,
+      "epoch": 0
+    },
+    {
+      "step": 281,
+      "loss": 10.264131546020508,
+      "perplexity": 28685.055332974793,
+      "epoch": 0
+    },
+    {
+      "step": 282,
+      "loss": 10.110231399536133,
+      "perplexity": 24593.350968077266,
+      "epoch": 0
+    },
+    {
+      "step": 283,
+      "loss": 9.92106819152832,
+      "perplexity": 20354.7217610864,
+      "epoch": 0
+    },
+    {
+      "step": 284,
+      "loss": 9.925506591796875,
+      "perplexity": 20445.264948433545,
+      "epoch": 0
+    },
+    {
+      "step": 285,
+      "loss": 9.932602882385254,
+      "perplexity": 20590.866494094724,
+      "epoch": 0
+    },
+    {
+      "step": 286,
+      "loss": 9.878652572631836,
+      "perplexity": 19509.417420874626,
+      "epoch": 0
+    },
+    {
+      "step": 287,
+      "loss": 9.956926345825195,
+      "perplexity": 21097.848465919633,
+      "epoch": 0
+    },
+    {
+      "step": 288,
+      "loss": 10.100824356079102,
+      "perplexity": 24363.085005787918,
+      "epoch": 0
+    },
+    {
+      "step": 289,
+      "loss": 10.034608840942383,
+      "perplexity": 22802.12109145339,
+      "epoch": 0
+    },
+    {
+      "step": 290,
+      "loss": 10.027544021606445,
+      "perplexity": 22641.5959337578,
+      "epoch": 0
+    },
+    {
+      "step": 291,
+      "loss": 9.8385009765625,
+      "perplexity": 18741.600853603526,
+      "epoch": 0
+    },
+    {
+      "step": 292,
+      "loss": 9.923141479492188,
+      "perplexity": 20396.966738590636,
+      "epoch": 0
+    },
+    {
+      "step": 293,
+      "loss": 9.843621253967285,
+      "perplexity": 18837.809145362055,
+      "epoch": 0
+    },
+    {
+      "step": 294,
+      "loss": 9.788509368896484,
+      "perplexity": 17827.711809679244,
+      "epoch": 0
+    },
+    {
+      "step": 295,
+      "loss": 9.824780464172363,
+      "perplexity": 18486.212522704096,
+      "epoch": 0
+    },
+    {
+      "step": 296,
+      "loss": 9.726987838745117,
+      "perplexity": 16763.98038110488,
+      "epoch": 0
+    },
+    {
+      "step": 297,
+      "loss": 9.812507629394531,
+      "perplexity": 18260.720832211562,
+      "epoch": 0
+    },
+    {
+      "step": 298,
+      "loss": 9.752401351928711,
+      "perplexity": 17195.471649195428,
+      "epoch": 0
+    },
+    {
+      "step": 299,
+      "loss": 9.813668251037598,
+      "perplexity": 18281.926923771374,
+      "epoch": 0
+    },
+    {
+      "step": 300,
+      "loss": 9.95097827911377,
+      "perplexity": 20972.729532544945,
+      "epoch": 0
+    },
+    {
+      "step": 301,
+      "loss": 9.875670433044434,
+      "perplexity": 19451.324278838598,
+      "epoch": 0
+    },
+    {
+      "step": 302,
+      "loss": 9.648170471191406,
+      "perplexity": 15493.4165069404,
+      "epoch": 0
+    },
+    {
+      "step": 303,
+      "loss": 9.571170806884766,
+      "perplexity": 14345.201957063735,
+      "epoch": 0
+    },
+    {
+      "step": 304,
+      "loss": 9.652565002441406,
+      "perplexity": 15561.65263302956,
+      "epoch": 0
+    },
+    {
+      "step": 305,
+      "loss": 9.578142166137695,
+      "perplexity": 14445.556912248976,
+      "epoch": 0
+    },
+    {
+      "step": 306,
+      "loss": 9.683069229125977,
+      "perplexity": 16043.663115411839,
+      "epoch": 0
+    },
+    {
+      "step": 307,
+      "loss": 9.608139038085938,
+      "perplexity": 14885.44305320139,
+      "epoch": 0
+    },
+    {
+      "step": 308,
+      "loss": 9.450631141662598,
+      "perplexity": 12716.188447835655,
+      "epoch": 0
+    },
+    {
+      "step": 309,
+      "loss": 9.828191757202148,
+      "perplexity": 18549.382094331355,
+      "epoch": 0
+    },
+    {
+      "step": 310,
+      "loss": 9.36793041229248,
+      "perplexity": 11706.861621886374,
+      "epoch": 0
+    },
+    {
+      "step": 311,
+      "loss": 9.780109405517578,
+      "perplexity": 17678.58688215917,
+      "epoch": 0
+    },
+    {
+      "step": 312,
+      "loss": 9.51009750366211,
+      "perplexity": 13495.310094506704,
+      "epoch": 0
+    },
+    {
+      "step": 313,
+      "loss": 9.471695899963379,
+      "perplexity": 12986.893037603139,
+      "epoch": 0
+    },
+    {
+      "step": 314,
+      "loss": 9.683053970336914,
+      "perplexity": 16043.41831040829,
+      "epoch": 0
+    },
+    {
+      "step": 315,
+      "loss": 9.268623352050781,
+      "perplexity": 10600.149163726112,
+      "epoch": 0
+    },
+    {
+      "step": 316,
+      "loss": 9.282316207885742,
+      "perplexity": 10746.293763086322,
+      "epoch": 0
+    },
+    {
+      "step": 317,
+      "loss": 9.473176002502441,
+      "perplexity": 13006.12920319967,
+      "epoch": 0
+    },
+    {
+      "step": 318,
+      "loss": 9.490700721740723,
+      "perplexity": 13236.06687769583,
+      "epoch": 0
+    },
+    {
+      "step": 319,
+      "loss": 9.393350601196289,
+      "perplexity": 12008.26691538543,
+      "epoch": 0
+    },
+    {
+      "step": 320,
+      "loss": 9.254720687866211,
+      "perplexity": 10453.798538656043,
+      "epoch": 0
+    },
+    {
+      "step": 321,
+      "loss": 9.207695960998535,
+      "perplexity": 9973.590823970771,
+      "epoch": 0
+    },
+    {
+      "step": 322,
+      "loss": 9.335949897766113,
+      "perplexity": 11338.393468101776,
+      "epoch": 0
+    },
+    {
+      "step": 323,
+      "loss": 9.254240989685059,
+      "perplexity": 10448.785073082214,
+      "epoch": 0
+    },
+    {
+      "step": 324,
+      "loss": 9.32332992553711,
+      "perplexity": 11196.202368429053,
+      "epoch": 0
+    },
+    {
+      "step": 325,
+      "loss": 9.164264678955078,
+      "perplexity": 9549.696749151704,
+      "epoch": 0
+    },
+    {
+      "step": 326,
+      "loss": 9.235397338867188,
+      "perplexity": 10253.735312028668,
+      "epoch": 0
+    },
+    {
+      "step": 327,
+      "loss": 9.19381332397461,
+      "perplexity": 9836.087743791908,
+      "epoch": 0
+    },
+    {
+      "step": 328,
+      "loss": 9.097774505615234,
+      "perplexity": 8935.384910414472,
+      "epoch": 0
+    },
+    {
+      "step": 329,
+      "loss": 9.306909561157227,
+      "perplexity": 11013.857824879133,
+      "epoch": 0
+    },
+    {
+      "step": 330,
+      "loss": 9.237383842468262,
+      "perplexity": 10274.124639181358,
+      "epoch": 0
+    },
+    {
+      "step": 331,
+      "loss": 9.313392639160156,
+      "perplexity": 11085.493483145658,
+      "epoch": 0
+    },
+    {
+      "step": 332,
+      "loss": 9.21075439453125,
+      "perplexity": 10004.141082742348,
+      "epoch": 0
+    },
+    {
+      "step": 333,
+      "loss": 9.254432678222656,
+      "perplexity": 10450.78817739248,
+      "epoch": 0
+    },
+    {
+      "step": 334,
+      "loss": 8.960124015808105,
+      "perplexity": 7786.3230294479845,
+      "epoch": 0
+    },
+    {
+      "step": 335,
+      "loss": 9.250333786010742,
+      "perplexity": 10408.039194711717,
+      "epoch": 0
+    },
+    {
+      "step": 336,
+      "loss": 9.205524444580078,
+      "perplexity": 9951.956505885364,
+      "epoch": 0
+    },
+    {
+      "step": 337,
+      "loss": 9.242630004882812,
+      "perplexity": 10328.165996630194,
+      "epoch": 0
+    },
+    {
+      "step": 338,
+      "loss": 9.185565948486328,
+      "perplexity": 9755.299438506705,
+      "epoch": 0
+    },
+    {
+      "step": 339,
+      "loss": 9.176068305969238,
+      "perplexity": 9663.085691573386,
+      "epoch": 0
+    },
+    {
+      "step": 340,
+      "loss": 9.216110229492188,
+      "perplexity": 10057.865352044155,
+      "epoch": 0
+    },
+    {
+      "step": 341,
+      "loss": 9.082132339477539,
+      "perplexity": 8796.703600853565,
+      "epoch": 0
+    },
+    {
+      "step": 342,
+      "loss": 9.094263076782227,
+      "perplexity": 8904.063965023992,
+      "epoch": 0
+    },
+    {
+      "step": 343,
+      "loss": 8.925891876220703,
+      "perplexity": 7524.291077587809,
+      "epoch": 0
+    },
+    {
+      "step": 344,
+      "loss": 9.256026268005371,
+      "perplexity": 10467.455723741763,
+      "epoch": 0
+    },
+    {
+      "step": 345,
+      "loss": 9.01461410522461,
+      "perplexity": 8222.372775568854,
+      "epoch": 0
+    },
+    {
+      "step": 346,
+      "loss": 9.013167381286621,
+      "perplexity": 8210.485872654157,
+      "epoch": 0
+    },
+    {
+      "step": 347,
+      "loss": 9.235868453979492,
+      "perplexity": 10258.567139775905,
+      "epoch": 0
+    },
+    {
+      "step": 348,
+      "loss": 9.001705169677734,
+      "perplexity": 8116.912847561589,
+      "epoch": 0
+    },
+    {
+      "step": 349,
+      "loss": 9.081525802612305,
+      "perplexity": 8791.369693596323,
+      "epoch": 0
+    },
+    {
+      "step": 350,
+      "loss": 8.939469337463379,
+      "perplexity": 7627.148539552964,
+      "epoch": 0
+    },
+    {
+      "step": 351,
+      "loss": 8.934974670410156,
+      "perplexity": 7592.943972954939,
+      "epoch": 0
+    },
+    {
+      "step": 352,
+      "loss": 8.868034362792969,
+      "perplexity": 7101.3086489094285,
+      "epoch": 0
+    },
+    {
+      "step": 353,
+      "loss": 9.143335342407227,
+      "perplexity": 9351.904977198525,
+      "epoch": 0
+    },
+    {
+      "step": 354,
+      "loss": 8.810066223144531,
+      "perplexity": 6701.363037657012,
+      "epoch": 0
+    },
+    {
+      "step": 355,
+      "loss": 9.10146713256836,
+      "perplexity": 8968.44094781728,
+      "epoch": 0
+    },
+    {
+      "step": 356,
+      "loss": 8.951942443847656,
+      "perplexity": 7722.87855892984,
+      "epoch": 0
+    },
+    {
+      "step": 357,
+      "loss": 9.237382888793945,
+      "perplexity": 10274.114841017237,
+      "epoch": 0
+    },
+    {
+      "step": 358,
+      "loss": 8.849784851074219,
+      "perplexity": 6972.8885992182995,
+      "epoch": 0
+    },
+    {
+      "step": 359,
+      "loss": 9.079498291015625,
+      "perplexity": 8773.563147181469,
+      "epoch": 0
+    },
+    {
+      "step": 360,
+      "loss": 8.996474266052246,
+      "perplexity": 8074.564914259973,
+      "epoch": 0
+    },
+    {
+      "step": 361,
+      "loss": 8.87116813659668,
+      "perplexity": 7123.597449714821,
+      "epoch": 0
+    },
+    {
+      "step": 362,
+      "loss": 8.885112762451172,
+      "perplexity": 7223.629182485432,
+      "epoch": 0
+    },
+    {
+      "step": 363,
+      "loss": 8.937813758850098,
+      "perplexity": 7614.531642564818,
+      "epoch": 0
+    },
+    {
+      "step": 364,
+      "loss": 8.696949005126953,
+      "perplexity": 5984.625273733719,
+      "epoch": 0
+    },
+    {
+      "step": 365,
+      "loss": 8.821331024169922,
+      "perplexity": 6777.279347149293,
+      "epoch": 0
+    },
+    {
+      "step": 366,
+      "loss": 8.920348167419434,
+      "perplexity": 7482.694006474786,
+      "epoch": 0
+    },
+    {
+      "step": 367,
+      "loss": 8.904269218444824,
+      "perplexity": 7363.3422481173475,
+      "epoch": 0
+    },
+    {
+      "step": 368,
+      "loss": 8.75409984588623,
+      "perplexity": 6336.614066670368,
+      "epoch": 0
+    },
+    {
+      "step": 369,
+      "loss": 8.78376579284668,
+      "perplexity": 6527.411828910088,
+      "epoch": 0
+    },
+    {
+      "step": 370,
+      "loss": 8.791305541992188,
+      "perplexity": 6576.812878401572,
+      "epoch": 0
+    },
+    {
+      "step": 371,
+      "loss": 8.661279678344727,
+      "perplexity": 5774.919976118027,
+      "epoch": 0
+    },
+    {
+      "step": 372,
+      "loss": 8.732666015625,
+      "perplexity": 6202.241361508863,
+      "epoch": 0
+    },
+    {
+      "step": 373,
+      "loss": 8.822035789489746,
+      "perplexity": 6782.057422108918,
+      "epoch": 0
+    },
+    {
+      "step": 374,
+      "loss": 9.003206253051758,
+      "perplexity": 8129.106159785038,
+      "epoch": 0
+    },
+    {
+      "step": 375,
+      "loss": 8.845035552978516,
+      "perplexity": 6939.850787979072,
+      "epoch": 0
+    },
+    {
+      "step": 376,
+      "loss": 8.968242645263672,
+      "perplexity": 7849.794603411825,
+      "epoch": 0
+    },
+    {
+      "step": 377,
+      "loss": 8.650347709655762,
+      "perplexity": 5712.132552132754,
+      "epoch": 0
+    },
+    {
+      "step": 378,
+      "loss": 8.676553726196289,
+      "perplexity": 5863.80345743497,
+      "epoch": 0
+    },
+    {
+      "step": 379,
+      "loss": 8.85644245147705,
+      "perplexity": 7019.466180587053,
+      "epoch": 0
+    },
+    {
+      "step": 380,
+      "loss": 8.64838695526123,
+      "perplexity": 5700.943436267833,
+      "epoch": 0
+    },
+    {
+      "step": 381,
+      "loss": 8.481572151184082,
+      "perplexity": 4825.029613098928,
+      "epoch": 0
+    },
+    {
+      "step": 382,
+      "loss": 8.633760452270508,
+      "perplexity": 5618.165422233684,
+      "epoch": 0
+    },
+    {
+      "step": 383,
+      "loss": 8.89997673034668,
+      "perplexity": 7331.802928658614,
+      "epoch": 0
+    },
+    {
+      "step": 384,
+      "loss": 8.691495895385742,
+      "perplexity": 5952.0792744589135,
+      "epoch": 0
+    },
+    {
+      "step": 385,
+      "loss": 8.864503860473633,
+      "perplexity": 7076.28166715831,
+      "epoch": 0
+    },
+    {
+      "step": 386,
+      "loss": 8.707292556762695,
+      "perplexity": 6046.848805662103,
+      "epoch": 0
+    },
+    {
+      "step": 387,
+      "loss": 8.705085754394531,
+      "perplexity": 6033.519318579192,
+      "epoch": 0
+    },
+    {
+      "step": 388,
+      "loss": 8.637781143188477,
+      "perplexity": 5640.799801351593,
+      "epoch": 0
+    },
+    {
+      "step": 389,
+      "loss": 8.695013046264648,
+      "perplexity": 5973.0504931621035,
+      "epoch": 0
+    },
+    {
+      "step": 390,
+      "loss": 8.871719360351562,
+      "perplexity": 7127.5252282923,
+      "epoch": 0
+    },
+    {
+      "step": 391,
+      "loss": 8.865840911865234,
+      "perplexity": 7085.749347385808,
+      "epoch": 0
+    },
+    {
+      "step": 392,
+      "loss": 8.636991500854492,
+      "perplexity": 5636.347345186209,
+      "epoch": 0
+    },
+    {
+      "step": 393,
+      "loss": 8.754011154174805,
+      "perplexity": 6336.052086446012,
+      "epoch": 0
+    },
+    {
+      "step": 394,
+      "loss": 8.582688331604004,
+      "perplexity": 5338.437742699399,
+      "epoch": 0
+    },
+    {
+      "step": 395,
+      "loss": 8.526705741882324,
+      "perplexity": 5047.78969289509,
+      "epoch": 0
+    },
+    {
+      "step": 396,
+      "loss": 8.481171607971191,
+      "perplexity": 4823.097367235222,
+      "epoch": 0
+    },
+    {
+      "step": 397,
+      "loss": 8.695785522460938,
+      "perplexity": 5977.666315064048,
+      "epoch": 0
+    },
+    {
+      "step": 398,
+      "loss": 8.60917854309082,
+      "perplexity": 5481.74381144876,
+      "epoch": 0
+    },
+    {
+      "step": 399,
+      "loss": 8.466793060302734,
+      "perplexity": 4754.24442074993,
+      "epoch": 0
+    },
+    {
+      "step": 400,
+      "loss": 8.533394813537598,
+      "perplexity": 5081.667900410885,
+      "epoch": 0
+    },
+    {
+      "step": 401,
+      "loss": 8.723934173583984,
+      "perplexity": 6148.320128088251,
+      "epoch": 0
+    },
+    {
+      "step": 402,
+      "loss": 8.360956192016602,
+      "perplexity": 4276.7822369124,
+      "epoch": 0
+    },
+    {
+      "step": 403,
+      "loss": 8.627817153930664,
+      "perplexity": 5584.874017377759,
+      "epoch": 0
+    },
+    {
+      "step": 404,
+      "loss": 8.459596633911133,
+      "perplexity": 4720.153663666102,
+      "epoch": 0
+    },
+    {
+      "step": 405,
+      "loss": 8.395868301391602,
+      "perplexity": 4428.730713774284,
+      "epoch": 0
+    },
+    {
+      "step": 406,
+      "loss": 8.576391220092773,
+      "perplexity": 5304.926627289488,
+      "epoch": 0
+    },
+    {
+      "step": 407,
+      "loss": 8.654632568359375,
+      "perplexity": 5736.6607454080195,
+      "epoch": 0
+    },
+    {
+      "step": 408,
+      "loss": 8.374923706054688,
+      "perplexity": 4336.937383797217,
+      "epoch": 0
+    },
+    {
+      "step": 409,
+      "loss": 8.464921951293945,
+      "perplexity": 4745.357028417142,
+      "epoch": 0
+    },
+    {
+      "step": 410,
+      "loss": 8.421375274658203,
+      "perplexity": 4543.147236013113,
+      "epoch": 0
+    },
+    {
+      "step": 411,
+      "loss": 8.336738586425781,
+      "perplexity": 4174.452898512789,
+      "epoch": 0
+    },
+    {
+      "step": 412,
+      "loss": 8.521184921264648,
+      "perplexity": 5019.998537066159,
+      "epoch": 0
+    },
+    {
+      "step": 413,
+      "loss": 8.395427703857422,
+      "perplexity": 4426.779855745427,
+      "epoch": 0
+    },
+    {
+      "step": 414,
+      "loss": 8.485278129577637,
+      "perplexity": 4842.944243706613,
+      "epoch": 0
+    },
+    {
+      "step": 415,
+      "loss": 8.380728721618652,
+      "perplexity": 4362.186587917181,
+      "epoch": 0
+    },
+    {
+      "step": 416,
+      "loss": 8.506446838378906,
+      "perplexity": 4946.555913650722,
+      "epoch": 0
+    },
+    {
+      "step": 417,
+      "loss": 8.333545684814453,
+      "perplexity": 4161.145536980044,
+      "epoch": 0
+    },
+    {
+      "step": 418,
+      "loss": 8.502019882202148,
+      "perplexity": 4924.706127103091,
+      "epoch": 0
+    },
+    {
+      "step": 419,
+      "loss": 8.32609748840332,
+      "perplexity": 4130.267642783099,
+      "epoch": 0
+    },
+    {
+      "step": 420,
+      "loss": 8.481870651245117,
+      "perplexity": 4826.47009971491,
+      "epoch": 0
+    },
+    {
+      "step": 421,
+      "loss": 8.420499801635742,
+      "perplexity": 4539.171573717389,
+      "epoch": 0
+    },
+    {
+      "step": 422,
+      "loss": 8.392115592956543,
+      "perplexity": 4412.142124205939,
+      "epoch": 0
+    },
+    {
+      "step": 423,
+      "loss": 8.666760444641113,
+      "perplexity": 5806.6578573951965,
+      "epoch": 0
+    },
+    {
+      "step": 424,
+      "loss": 8.224149703979492,
+      "perplexity": 3729.948494059898,
+      "epoch": 0
+    },
+    {
+      "step": 425,
+      "loss": 8.353752136230469,
+      "perplexity": 4246.082772191794,
+      "epoch": 0
+    },
+    {
+      "step": 426,
+      "loss": 8.390470504760742,
+      "perplexity": 4404.889728330241,
+      "epoch": 0
+    },
+    {
+      "step": 427,
+      "loss": 8.28449821472168,
+      "perplexity": 3961.976178400747,
+      "epoch": 0
+    },
+    {
+      "step": 428,
+      "loss": 8.365730285644531,
+      "perplexity": 4297.248811536654,
+      "epoch": 0
+    },
+    {
+      "step": 429,
+      "loss": 8.568585395812988,
+      "perplexity": 5263.678499478719,
+      "epoch": 0
+    },
+    {
+      "step": 430,
+      "loss": 8.15396499633789,
+      "perplexity": 3477.1386110383114,
+      "epoch": 0
+    },
+    {
+      "step": 431,
+      "loss": 8.322203636169434,
+      "perplexity": 4114.216262029129,
+      "epoch": 0
+    },
+    {
+      "step": 432,
+      "loss": 8.417312622070312,
+      "perplexity": 4524.727449070202,
+      "epoch": 0
+    },
+    {
+      "step": 433,
+      "loss": 8.266460418701172,
+      "perplexity": 3891.151540734274,
+      "epoch": 0
+    },
+    {
+      "step": 434,
+      "loss": 8.437952041625977,
+      "perplexity": 4619.085596384519,
+      "epoch": 0
+    },
+    {
+      "step": 435,
+      "loss": 8.35163688659668,
+      "perplexity": 4237.110739552537,
+      "epoch": 0
+    },
+    {
+      "step": 436,
+      "loss": 8.31486701965332,
+      "perplexity": 4084.1422905447457,
+      "epoch": 0
+    },
+    {
+      "step": 437,
+      "loss": 8.21391773223877,
+      "perplexity": 3691.978352449835,
+      "epoch": 0
+    },
+    {
+      "step": 438,
+      "loss": 8.395530700683594,
+      "perplexity": 4427.235823501943,
+      "epoch": 0
+    },
+    {
+      "step": 439,
+      "loss": 8.278584480285645,
+      "perplexity": 3938.6152466949293,
+      "epoch": 0
+    },
+    {
+      "step": 440,
+      "loss": 8.318307876586914,
+      "perplexity": 4098.219444710844,
+      "epoch": 0
+    },
+    {
+      "step": 441,
+      "loss": 8.373600006103516,
+      "perplexity": 4331.200377868972,
+      "epoch": 0
+    },
+    {
+      "step": 442,
+      "loss": 8.269350051879883,
+      "perplexity": 3902.411802507537,
+      "epoch": 0
+    },
+    {
+      "step": 443,
+      "loss": 8.206920623779297,
+      "perplexity": 3666.2353478158248,
+      "epoch": 0
+    },
+    {
+      "step": 444,
+      "loss": 8.327249526977539,
+      "perplexity": 4135.028612313147,
+      "epoch": 0
+    },
+    {
+      "step": 445,
+      "loss": 8.446642875671387,
+      "perplexity": 4659.404250335439,
+      "epoch": 0
+    },
+    {
+      "step": 446,
+      "loss": 8.182256698608398,
+      "perplexity": 3576.9175845421914,
+      "epoch": 0
+    },
+    {
+      "step": 447,
+      "loss": 8.383596420288086,
+      "perplexity": 4374.713978396558,
+      "epoch": 0
+    },
+    {
+      "step": 448,
+      "loss": 8.36246109008789,
+      "perplexity": 4283.2232035355955,
+      "epoch": 0
+    },
+    {
+      "step": 449,
+      "loss": 8.283876419067383,
+      "perplexity": 3959.5134045809673,
+      "epoch": 0
+    },
+    {
+      "step": 450,
+      "loss": 8.199148178100586,
+      "perplexity": 3637.8501866886722,
+      "epoch": 0
+    },
+    {
+      "step": 451,
+      "loss": 8.20363712310791,
+      "perplexity": 3654.217003508467,
+      "epoch": 0
+    },
+    {
+      "step": 452,
+      "loss": 8.226015090942383,
+      "perplexity": 3736.912784882172,
+      "epoch": 0
+    },
+    {
+      "step": 453,
+      "loss": 8.303220748901367,
+      "perplexity": 4036.8531691017765,
+      "epoch": 0
+    },
+    {
+      "step": 454,
+      "loss": 8.306843757629395,
+      "perplexity": 4051.505249647883,
+      "epoch": 0
+    },
+    {
+      "step": 455,
+      "loss": 8.248197555541992,
+      "perplexity": 3820.73295236369,
+      "epoch": 0
+    },
+    {
+      "step": 456,
+      "loss": 8.170530319213867,
+      "perplexity": 3535.218260759828,
+      "epoch": 0
+    },
+    {
+      "step": 457,
+      "loss": 8.219042778015137,
+      "perplexity": 3710.94848037592,
+      "epoch": 0
+    },
+    {
+      "step": 458,
+      "loss": 8.047562599182129,
+      "perplexity": 3126.16595812058,
+      "epoch": 0
+    },
+    {
+      "step": 459,
+      "loss": 8.325397491455078,
+      "perplexity": 4127.377479708408,
+      "epoch": 0
+    },
+    {
+      "step": 460,
+      "loss": 8.245564460754395,
+      "perplexity": 3810.68583365485,
+      "epoch": 0
+    },
+    {
+      "step": 461,
+      "loss": 8.299352645874023,
+      "perplexity": 4021.268366380659,
+      "epoch": 0
+    },
+    {
+      "step": 462,
+      "loss": 8.292095184326172,
+      "perplexity": 3992.189811716554,
+      "epoch": 0
+    },
+    {
+      "step": 463,
+      "loss": 8.027023315429688,
+      "perplexity": 3062.6116625517875,
+      "epoch": 0
+    },
+    {
+      "step": 464,
+      "loss": 8.17518138885498,
+      "perplexity": 3551.6991041522656,
+      "epoch": 0
+    },
+    {
+      "step": 465,
+      "loss": 8.117525100708008,
+      "perplexity": 3352.712842069791,
+      "epoch": 0
+    },
+    {
+      "step": 466,
+      "loss": 8.100791931152344,
+      "perplexity": 3297.0781005268022,
+      "epoch": 0
+    },
+    {
+      "step": 467,
+      "loss": 8.198801040649414,
+      "perplexity": 3636.5875718102548,
+      "epoch": 0
+    },
+    {
+      "step": 468,
+      "loss": 8.349738121032715,
+      "perplexity": 4229.073092807847,
+      "epoch": 0
+    },
+    {
+      "step": 469,
+      "loss": 8.232943534851074,
+      "perplexity": 3762.893675143639,
+      "epoch": 0
+    },
+    {
+      "step": 470,
+      "loss": 8.021592140197754,
+      "perplexity": 3046.023170226227,
+      "epoch": 0
+    },
+    {
+      "step": 471,
+      "loss": 8.083335876464844,
+      "perplexity": 3240.023547363806,
+      "epoch": 0
+    },
+    {
+      "step": 472,
+      "loss": 8.20644760131836,
+      "perplexity": 3664.501546245096,
+      "epoch": 0
+    },
+    {
+      "step": 473,
+      "loss": 8.12235164642334,
+      "perplexity": 3368.9339784104695,
+      "epoch": 0
+    },
+    {
+      "step": 474,
+      "loss": 8.196638107299805,
+      "perplexity": 3628.730375631417,
+      "epoch": 0
+    },
+    {
+      "step": 475,
+      "loss": 8.105295181274414,
+      "perplexity": 3311.959149279733,
+      "epoch": 0
+    },
+    {
+      "step": 476,
+      "loss": 8.140900611877441,
+      "perplexity": 3432.0073831651694,
+      "epoch": 0
+    },
+    {
+      "step": 477,
+      "loss": 8.065786361694336,
+      "perplexity": 3183.658740389847,
+      "epoch": 0
+    },
+    {
+      "step": 478,
+      "loss": 8.070304870605469,
+      "perplexity": 3198.0766800418814,
+      "epoch": 0
+    },
+    {
+      "step": 479,
+      "loss": 7.971264839172363,
+      "perplexity": 2896.5186785334854,
+      "epoch": 0
+    },
+    {
+      "step": 480,
+      "loss": 8.014501571655273,
+      "perplexity": 3024.5015246759513,
+      "epoch": 0
+    },
+    {
+      "step": 481,
+      "loss": 8.015623092651367,
+      "perplexity": 3027.8954694730232,
+      "epoch": 0
+    },
+    {
+      "step": 482,
+      "loss": 8.077093124389648,
+      "perplexity": 3219.8598874893064,
+      "epoch": 0
+    },
+    {
+      "step": 483,
+      "loss": 8.088315963745117,
+      "perplexity": 3256.199392548467,
+      "epoch": 0
+    },
+    {
+      "step": 484,
+      "loss": 8.085783004760742,
+      "perplexity": 3247.962009922532,
+      "epoch": 0
+    },
+    {
+      "step": 485,
+      "loss": 8.062637329101562,
+      "perplexity": 3173.6490639224776,
+      "epoch": 0
+    },
+    {
+      "step": 486,
+      "loss": 8.120967864990234,
+      "perplexity": 3364.275334137895,
+      "epoch": 0
+    },
+    {
+      "step": 487,
+      "loss": 7.902926921844482,
+      "perplexity": 2705.1886277518342,
+      "epoch": 0
+    },
+    {
+      "step": 488,
+      "loss": 8.053902626037598,
+      "perplexity": 3146.048896831339,
+      "epoch": 0
+    },
+    {
+      "step": 489,
+      "loss": 8.078216552734375,
+      "perplexity": 3223.479201992552,
+      "epoch": 0
+    },
+    {
+      "step": 490,
+      "loss": 8.052884101867676,
+      "perplexity": 3142.8462012784457,
+      "epoch": 0
+    },
+    {
+      "step": 491,
+      "loss": 8.042552947998047,
+      "perplexity": 3110.5441197785635,
+      "epoch": 0
+    },
+    {
+      "step": 492,
+      "loss": 8.005199432373047,
+      "perplexity": 2996.497640181688,
+      "epoch": 0
+    },
+    {
+      "step": 493,
+      "loss": 8.101362228393555,
+      "perplexity": 3298.958951342628,
+      "epoch": 0
+    },
+    {
+      "step": 494,
+      "loss": 8.168916702270508,
+      "perplexity": 3529.518372630584,
+      "epoch": 0
+    },
+    {
+      "step": 495,
+      "loss": 8.204240798950195,
+      "perplexity": 3656.423632013101,
+      "epoch": 0
+    },
+    {
+      "step": 496,
+      "loss": 7.974983215332031,
+      "perplexity": 2907.30907347481,
+      "epoch": 0
+    },
+    {
+      "step": 497,
+      "loss": 7.869887351989746,
+      "perplexity": 2617.27074123955,
+      "epoch": 0
+    },
+    {
+      "step": 498,
+      "loss": 7.990131855010986,
+      "perplexity": 2951.6861284333086,
+      "epoch": 0
+    },
+    {
+      "step": 499,
+      "loss": 8.153959274291992,
+      "perplexity": 3477.1187147485075,
+      "epoch": 0
+    }
+  ]
+}

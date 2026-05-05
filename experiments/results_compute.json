@@ -1,0 +1,14 @@
+[
+  {
+    "tokenizer": "IndicTokenizer",
+    "text_words": 1000,
+    "sequence_length_n": 2552,
+    "flops_approx": 3334504448
+  },
+  {
+    "tokenizer": "SentencePiece",
+    "text_words": 1000,
+    "sequence_length_n": 1320,
+    "flops_approx": 892108800
+  }
+]

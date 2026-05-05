@@ -1,0 +1,18 @@
+[
+  {
+    "tokenizer": "IndicTokenizer",
+    "layer_entropies": [
+      5.523,
+      5.529
+    ],
+    "avg_entropy": 5.526
+  },
+  {
+    "tokenizer": "SentencePiece",
+    "layer_entropies": [
+      5.518,
+      5.518
+    ],
+    "avg_entropy": 5.518
+  }
+]

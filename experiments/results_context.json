@@ -1,0 +1,14 @@
+{
+  "indic": {
+    "words_per_window": 195.9,
+    "chars_per_window": 803.78
+  },
+  "sp_bpe": {
+    "words_per_window": 381.04,
+    "chars_per_window": 1544.15
+  },
+  "sp_unigram": {
+    "words_per_window": 365.52,
+    "chars_per_window": 1500.33
+  }
+}

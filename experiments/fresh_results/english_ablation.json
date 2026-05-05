@@ -1,0 +1,25 @@
+{
+  "language": "English",
+  "rows": [
+    {
+      "variant": "Standard BPE",
+      "avg_loss": 6.6565,
+      "avg_ppl": 777.8
+    },
+    {
+      "variant": "+ EGC Pretokenization",
+      "avg_loss": 4.3282,
+      "avg_ppl": 75.8
+    },
+    {
+      "variant": "+ Morphology Bonus",
+      "avg_loss": 4.2321,
+      "avg_ppl": 68.9
+    },
+    {
+      "variant": "Full MorphTokenizer",
+      "avg_loss": 4.2236,
+      "avg_ppl": 68.3
+    }
+  ]
+}

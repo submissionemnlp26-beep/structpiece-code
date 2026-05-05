@@ -1,0 +1,19 @@
+[project]
+name = "indic-tokenizer"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "regex",
+    "unicodedata2",
+    "datasets",
+    "sentencepiece",
+    "transformers",
+    "tokenizers",
+    "numpy",
+    "matplotlib",
+    "tqdm",
+    "rich",
+    "tiktoken",
+    "fpdf2>=2.8.7",
+    "seqeval>=1.2.2",
+]

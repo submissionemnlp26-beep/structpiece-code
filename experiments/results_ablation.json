@@ -1,0 +1,42 @@
+[
+  {
+    "variant": "Full model",
+    "morph_bonus": true,
+    "script_penalty": true,
+    "vocab_size": 4000,
+    "tokens_per_word": 2.599,
+    "bytes_per_token": 5.023,
+    "suffix_isolation_pct": 91.7,
+    "delta_tpw": 0.0
+  },
+  {
+    "variant": "No morphology bonus",
+    "morph_bonus": false,
+    "script_penalty": true,
+    "vocab_size": 4000,
+    "tokens_per_word": 2.435,
+    "bytes_per_token": 5.363,
+    "suffix_isolation_pct": 87.5,
+    "delta_tpw": -0.164
+  },
+  {
+    "variant": "No script penalty",
+    "morph_bonus": true,
+    "script_penalty": false,
+    "vocab_size": 4000,
+    "tokens_per_word": 2.601,
+    "bytes_per_token": 5.02,
+    "suffix_isolation_pct": 91.7,
+    "delta_tpw": 0.002
+  },
+  {
+    "variant": "Pure BPE (neither)",
+    "morph_bonus": false,
+    "script_penalty": false,
+    "vocab_size": 4000,
+    "tokens_per_word": 2.434,
+    "bytes_per_token": 5.365,
+    "suffix_isolation_pct": 87.5,
+    "delta_tpw": -0.165
+  }
+]

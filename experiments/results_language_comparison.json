@@ -1,0 +1,32 @@
+{
+  "results": [
+    {
+      "tokenizer": "tiktoken (English)",
+      "tokens_per_word": 1.178,
+      "bytes_per_token": 4.497,
+      "total_tokens": 511925,
+      "total_words": 434663,
+      "speed_tok_per_sec": 4243241.04,
+      "language": "English"
+    },
+    {
+      "tokenizer": "tiktoken (Hindi)",
+      "tokens_per_word": 4.993,
+      "bytes_per_token": 2.615,
+      "total_tokens": 1435351,
+      "total_words": 287497,
+      "speed_tok_per_sec": 5961919.33,
+      "language": "Hindi"
+    },
+    {
+      "tokenizer": "IndicTokenizer (Hindi)",
+      "tokens_per_word": 2.504,
+      "bytes_per_token": 5.213,
+      "total_tokens": 719970,
+      "total_words": 287497,
+      "speed_tok_per_sec": 827340.52,
+      "language": "Hindi"
+    }
+  ],
+  "fairness_gap_ratio": 4.239
+}

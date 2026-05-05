@@ -1,0 +1,72 @@
+{
+  "language": "turkish",
+  "config": {
+    "vocab_size": 4000,
+    "train_lines": 2000,
+    "block_size": 128,
+    "batch_size": 32,
+    "bpe_steps": 500,
+    "tokens_per_step": 4096,
+    "target_tokens": 2048000
+  },
+  "dataset_stats": {
+    "morph": {
+      "total_tokens_in_corpus": 98827,
+      "n_samples": 98698,
+      "tokens_per_step": 4096
+    },
+    "bpe": {
+      "total_tokens_in_corpus": 52768,
+      "n_samples": 52639,
+      "tokens_per_step": 4096
+    }
+  },
+  "token_stats": {
+    "morph": {
+      "total_tokens": 96827,
+      "total_chars": 167129,
+      "total_words": 22593,
+      "tok_per_char": 0.5794,
+      "tok_per_word": 4.286
+    },
+    "bpe": {
+      "total_tokens": 50768,
+      "total_chars": 167129,
+      "total_words": 22593,
+      "tok_per_char": 0.3038,
+      "tok_per_word": 2.247
+    }
+  },
+  "results": {
+    "sp_bpe": {
+      "steps": 500,
+      "total_tokens_processed": 2048000,
+      "avg_loss": 6.834,
+      "avg_ppl": 928.9,
+      "final_loss": 6.7683,
+      "final_ppl": 869.8,
+      "bpc": 2.995,
+      "epochs": 38.81
+    },
+    "morph_equal_tokens": {
+      "steps": 500,
+      "total_tokens_processed": 2048000,
+      "avg_loss": 4.6066,
+      "avg_ppl": 100.1,
+      "final_loss": 4.5618,
+      "final_ppl": 95.8,
+      "bpc": 3.851,
+      "epochs": 20.72
+    },
+    "morph_equal_epochs": {
+      "steps": 937,
+      "total_tokens_processed": 3837952,
+      "avg_loss": 4.3454,
+      "avg_ppl": 77.1,
+      "final_loss": 4.3208,
+      "final_ppl": 75.2,
+      "bpc": 3.632,
+      "epochs": 38.84
+    }
+  }
+}

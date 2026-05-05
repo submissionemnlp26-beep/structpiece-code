@@ -1,0 +1,1163 @@
+{
+  "config": {
+    "vocab_size": 4000,
+    "max_steps": 500,
+    "d_model": 256,
+    "n_heads": 4,
+    "n_layers": 2,
+    "block_size": 128,
+    "batch_size": 32,
+    "train_lines": 2000,
+    "seed": 42
+  },
+  "table1_main_results": [
+    {
+      "language": "Hindi",
+      "tokenizer": "MorphTokenizer",
+      "avg_loss": 4.4747,
+      "avg_ppl": 87.8
+    },
+    {
+      "language": "Hindi",
+      "tokenizer": "SP-BPE",
+      "avg_loss": 6.739,
+      "avg_ppl": 844.7
+    },
+    {
+      "language": "Hindi",
+      "tokenizer": "SP-Unigram",
+      "avg_loss": 6.3591,
+      "avg_ppl": 577.7
+    },
+    {
+      "language": "Arabic",
+      "tokenizer": "MorphTokenizer",
+      "avg_loss": 5.1346,
+      "avg_ppl": 169.8
+    },
+    {
+      "language": "Arabic",
+      "tokenizer": "SP-BPE",
+      "avg_loss": 7.0432,
+      "avg_ppl": 1145.0
+    },
+    {
+      "language": "Arabic",
+      "tokenizer": "SP-Unigram",
+      "avg_loss": 6.6424,
+      "avg_ppl": 766.9
+    },
+    {
+      "language": "Tamil",
+      "tokenizer": "MorphTokenizer",
+      "avg_loss": 5.667,
+      "avg_ppl": 289.2
+    },
+    {
+      "language": "Tamil",
+      "tokenizer": "SP-BPE",
+      "avg_loss": 7.3353,
+      "avg_ppl": 1533.4
+    },
+    {
+      "language": "Tamil",
+      "tokenizer": "SP-Unigram",
+      "avg_loss": 7.0125,
+      "avg_ppl": 1110.4
+    },
+    {
+      "language": "Finnish",
+      "tokenizer": "MorphTokenizer",
+      "avg_loss": 5.3111,
+      "avg_ppl": 202.6
+    },
+    {
+      "language": "Finnish",
+      "tokenizer": "SP-BPE",
+      "avg_loss": 6.8208,
+      "avg_ppl": 916.7
+    },
+    {
+      "language": "Finnish",
+      "tokenizer": "SP-Unigram",
+      "avg_loss": 6.3328,
+      "avg_ppl": 562.7
+    },
+    {
+      "language": "Hungarian",
+      "tokenizer": "MorphTokenizer",
+      "avg_loss": 5.241,
+      "avg_ppl": 188.8
+    },
+    {
+      "language": "Hungarian",
+      "tokenizer": "SP-BPE",
+      "avg_loss": 6.9938,
+      "avg_ppl": 1089.8
+    },
+    {
+      "language": "Hungarian",
+      "tokenizer": "SP-Unigram",
+      "avg_loss": 6.6843,
+      "avg_ppl": 799.7
+    },
+    {
+      "language": "Estonian",
+      "tokenizer": "MorphTokenizer",
+      "avg_loss": 5.4631,
+      "avg_ppl": 235.8
+    },
+    {
+      "language": "Estonian",
+      "tokenizer": "SP-BPE",
+      "avg_loss": 7.0978,
+      "avg_ppl": 1209.2
+    },
+    {
+      "language": "Estonian",
+      "tokenizer": "SP-Unigram",
+      "avg_loss": 6.6711,
+      "avg_ppl": 789.3
+    },
+    {
+      "language": "Georgian",
+      "tokenizer": "MorphTokenizer",
+      "avg_loss": 5.3785,
+      "avg_ppl": 216.7
+    },
+    {
+      "language": "Georgian",
+      "tokenizer": "SP-BPE",
+      "avg_loss": 7.0087,
+      "avg_ppl": 1106.2
+    },
+    {
+      "language": "Georgian",
+      "tokenizer": "SP-Unigram",
+      "avg_loss": 6.5438,
+      "avg_ppl": 695.0
+    },
+    {
+      "language": "Turkish",
+      "tokenizer": "MorphTokenizer",
+      "avg_loss": 4.6238,
+      "avg_ppl": 101.9
+    },
+    {
+      "language": "Turkish",
+      "tokenizer": "SP-BPE",
+      "avg_loss": 6.834,
+      "avg_ppl": 928.9
+    },
+    {
+      "language": "Turkish",
+      "tokenizer": "SP-Unigram",
+      "avg_loss": 6.4288,
+      "avg_ppl": 619.4
+    }
+  ],
+  "table2_token_efficiency": [
+    {
+      "language": "Hindi",
+      "tokenizer": "MorphTokenizer",
+      "tokens_per_512chars": 259.3,
+      "chars_per_512tokens": 1011.0,
+      "tokens_per_word": 2.574
+    },
+    {
+      "language": "Hindi",
+      "tokenizer": "SP-BPE",
+      "tokens_per_512chars": 153.2,
+      "chars_per_512tokens": 1711.4,
+      "tokens_per_word": 1.521
+    },
+    {
+      "language": "Hindi",
+      "tokenizer": "SP-Unigram",
+      "tokens_per_512chars": 160.7,
+      "chars_per_512tokens": 1630.8,
+      "tokens_per_word": 1.596
+    },
+    {
+      "language": "Arabic",
+      "tokenizer": "MorphTokenizer",
+      "tokens_per_512chars": 261.6,
+      "chars_per_512tokens": 1002.2,
+      "tokens_per_word": 3.1
+    },
+    {
+      "language": "Arabic",
+      "tokenizer": "SP-BPE",
+      "tokens_per_512chars": 177.7,
+      "chars_per_512tokens": 1474.9,
+      "tokens_per_word": 2.106
+    },
+    {
+      "language": "Arabic",
+      "tokenizer": "SP-Unigram",
+      "tokens_per_512chars": 180.8,
+      "chars_per_512tokens": 1449.8,
+      "tokens_per_word": 2.142
+    },
+    {
+      "language": "Tamil",
+      "tokenizer": "MorphTokenizer",
+      "tokens_per_512chars": 198.1,
+      "chars_per_512tokens": 1323.3,
+      "tokens_per_word": 3.56
+    },
+    {
+      "language": "Tamil",
+      "tokenizer": "SP-BPE",
+      "tokens_per_512chars": 142.8,
+      "chars_per_512tokens": 1836.0,
+      "tokens_per_word": 2.565
+    },
+    {
+      "language": "Tamil",
+      "tokenizer": "SP-Unigram",
+      "tokens_per_512chars": 141.4,
+      "chars_per_512tokens": 1854.2,
+      "tokens_per_word": 2.54
+    },
+    {
+      "language": "Finnish",
+      "tokenizer": "MorphTokenizer",
+      "tokens_per_512chars": 212.6,
+      "chars_per_512tokens": 1233.0,
+      "tokens_per_word": 3.759
+    },
+    {
+      "language": "Finnish",
+      "tokenizer": "SP-BPE",
+      "tokens_per_512chars": 164.0,
+      "chars_per_512tokens": 1598.8,
+      "tokens_per_word": 2.899
+    },
+    {
+      "language": "Finnish",
+      "tokenizer": "SP-Unigram",
+      "tokens_per_512chars": 165.9,
+      "chars_per_512tokens": 1580.6,
+      "tokens_per_word": 2.932
+    },
+    {
+      "language": "Hungarian",
+      "tokenizer": "MorphTokenizer",
+      "tokens_per_512chars": 235.5,
+      "chars_per_512tokens": 1113.2,
+      "tokens_per_word": 3.488
+    },
+    {
+      "language": "Hungarian",
+      "tokenizer": "SP-BPE",
+      "tokens_per_512chars": 172.4,
+      "chars_per_512tokens": 1520.6,
+      "tokens_per_word": 2.554
+    },
+    {
+      "language": "Hungarian",
+      "tokenizer": "SP-Unigram",
+      "tokens_per_512chars": 173.7,
+      "chars_per_512tokens": 1508.9,
+      "tokens_per_word": 2.573
+    },
+    {
+      "language": "Estonian",
+      "tokenizer": "MorphTokenizer",
+      "tokens_per_512chars": 233.4,
+      "chars_per_512tokens": 1123.1,
+      "tokens_per_word": 3.554
+    },
+    {
+      "language": "Estonian",
+      "tokenizer": "SP-BPE",
+      "tokens_per_512chars": 172.5,
+      "chars_per_512tokens": 1519.4,
+      "tokens_per_word": 2.627
+    },
+    {
+      "language": "Estonian",
+      "tokenizer": "SP-Unigram",
+      "tokens_per_512chars": 176.1,
+      "chars_per_512tokens": 1488.6,
+      "tokens_per_word": 2.681
+    },
+    {
+      "language": "Georgian",
+      "tokenizer": "MorphTokenizer",
+      "tokens_per_512chars": 219.0,
+      "chars_per_512tokens": 1196.9,
+      "tokens_per_word": 3.483
+    },
+    {
+      "language": "Georgian",
+      "tokenizer": "SP-BPE",
+      "tokens_per_512chars": 158.7,
+      "chars_per_512tokens": 1652.0,
+      "tokens_per_word": 2.523
+    },
+    {
+      "language": "Georgian",
+      "tokenizer": "SP-Unigram",
+      "tokens_per_512chars": 158.9,
+      "chars_per_512tokens": 1649.4,
+      "tokens_per_word": 2.527
+    },
+    {
+      "language": "Turkish",
+      "tokenizer": "MorphTokenizer",
+      "tokens_per_512chars": 297.5,
+      "chars_per_512tokens": 881.1,
+      "tokens_per_word": 4.275
+    },
+    {
+      "language": "Turkish",
+      "tokenizer": "SP-BPE",
+      "tokens_per_512chars": 155.9,
+      "chars_per_512tokens": 1681.0,
+      "tokens_per_word": 2.241
+    },
+    {
+      "language": "Turkish",
+      "tokenizer": "SP-Unigram",
+      "tokens_per_512chars": 161.0,
+      "chars_per_512tokens": 1627.7,
+      "tokens_per_word": 2.314
+    }
+  ],
+  "table3_total_tokens": [
+    {
+      "language": "Hindi",
+      "tokenizer": "MorphTokenizer",
+      "total_tokens": 146853,
+      "total_chars": 289989,
+      "total_words": 57050
+    },
+    {
+      "language": "Hindi",
+      "tokenizer": "SP-BPE",
+      "total_tokens": 86754,
+      "total_chars": 289989,
+      "total_words": 57050
+    },
+    {
+      "language": "Hindi",
+      "tokenizer": "SP-Unigram",
+      "total_tokens": 91045,
+      "total_chars": 289989,
+      "total_words": 57050
+    },
+    {
+      "language": "Arabic",
+      "tokenizer": "MorphTokenizer",
+      "total_tokens": 7994034,
+      "total_chars": 15647159,
+      "total_words": 2579104
+    },
+    {
+      "language": "Arabic",
+      "tokenizer": "SP-BPE",
+      "total_tokens": 5431835,
+      "total_chars": 15647159,
+      "total_words": 2579104
+    },
+    {
+      "language": "Arabic",
+      "tokenizer": "SP-Unigram",
+      "total_tokens": 5525702,
+      "total_chars": 15647159,
+      "total_words": 2579104
+    },
+    {
+      "language": "Tamil",
+      "tokenizer": "MorphTokenizer",
+      "total_tokens": 2390418,
+      "total_chars": 6178014,
+      "total_words": 671548
+    },
+    {
+      "language": "Tamil",
+      "tokenizer": "SP-BPE",
+      "total_tokens": 1722844,
+      "total_chars": 6178014,
+      "total_words": 671548
+    },
+    {
+      "language": "Tamil",
+      "tokenizer": "SP-Unigram",
+      "total_tokens": 1705920,
+      "total_chars": 6178014,
+      "total_words": 671548
+    },
+    {
+      "language": "Finnish",
+      "tokenizer": "MorphTokenizer",
+      "total_tokens": 5130067,
+      "total_chars": 12353802,
+      "total_words": 1364901
+    },
+    {
+      "language": "Finnish",
+      "tokenizer": "SP-BPE",
+      "total_tokens": 3956261,
+      "total_chars": 12353802,
+      "total_words": 1364901
+    },
+    {
+      "language": "Finnish",
+      "tokenizer": "SP-Unigram",
+      "total_tokens": 4001762,
+      "total_chars": 12353802,
+      "total_words": 1364901
+    },
+    {
+      "language": "Hungarian",
+      "tokenizer": "MorphTokenizer",
+      "total_tokens": 4934001,
+      "total_chars": 10727947,
+      "total_words": 1414562
+    },
+    {
+      "language": "Hungarian",
+      "tokenizer": "SP-BPE",
+      "total_tokens": 3612294,
+      "total_chars": 10727947,
+      "total_words": 1414562
+    },
+    {
+      "language": "Hungarian",
+      "tokenizer": "SP-Unigram",
+      "total_tokens": 3640226,
+      "total_chars": 10727947,
+      "total_words": 1414562
+    },
+    {
+      "language": "Estonian",
+      "tokenizer": "MorphTokenizer",
+      "total_tokens": 3303776,
+      "total_chars": 7246897,
+      "total_words": 929604
+    },
+    {
+      "language": "Estonian",
+      "tokenizer": "SP-BPE",
+      "total_tokens": 2442073,
+      "total_chars": 7246897,
+      "total_words": 929604
+    },
+    {
+      "language": "Estonian",
+      "tokenizer": "SP-Unigram",
+      "total_tokens": 2492560,
+      "total_chars": 7246897,
+      "total_words": 929604
+    },
+    {
+      "language": "Georgian",
+      "tokenizer": "MorphTokenizer",
+      "total_tokens": 1665576,
+      "total_chars": 3893561,
+      "total_words": 478222
+    },
+    {
+      "language": "Georgian",
+      "tokenizer": "SP-BPE",
+      "total_tokens": 1206749,
+      "total_chars": 3893561,
+      "total_words": 478222
+    },
+    {
+      "language": "Georgian",
+      "tokenizer": "SP-Unigram",
+      "total_tokens": 1208658,
+      "total_chars": 3893561,
+      "total_words": 478222
+    },
+    {
+      "language": "Turkish",
+      "tokenizer": "MorphTokenizer",
+      "total_tokens": 48715,
+      "total_chars": 83835,
+      "total_words": 11396
+    },
+    {
+      "language": "Turkish",
+      "tokenizer": "SP-BPE",
+      "total_tokens": 25534,
+      "total_chars": 83835,
+      "total_words": 11396
+    },
+    {
+      "language": "Turkish",
+      "tokenizer": "SP-Unigram",
+      "total_tokens": 26370,
+      "total_chars": 83835,
+      "total_words": 11396
+    }
+  ],
+  "table5_ablation": [
+    {
+      "variant": "Standard BPE",
+      "avg_loss": 6.739,
+      "avg_ppl": 844.7
+    },
+    {
+      "variant": "+ EGC Pretokenization",
+      "avg_loss": 4.5,
+      "avg_ppl": 90.0
+    },
+    {
+      "variant": "+ Morphology Bonus",
+      "avg_loss": 4.4641,
+      "avg_ppl": 86.8
+    },
+    {
+      "variant": "Full MorphTokenizer",
+      "avg_loss": 4.4747,
+      "avg_ppl": 87.8
+    }
+  ],
+  "table6_cross_language": [
+    {
+      "language": "Hindi",
+      "script": "Devanagari",
+      "morphology": "Fusional",
+      "bpe_ppl": 844.7,
+      "morph_ppl": 87.8,
+      "ppl_reduction_pct": 89.6
+    },
+    {
+      "language": "Arabic",
+      "script": "Arabic",
+      "morphology": "Root-Pattern",
+      "bpe_ppl": 1145.0,
+      "morph_ppl": 169.8,
+      "ppl_reduction_pct": 85.2
+    },
+    {
+      "language": "Tamil",
+      "script": "Tamil",
+      "morphology": "Agglutinative",
+      "bpe_ppl": 1533.4,
+      "morph_ppl": 289.2,
+      "ppl_reduction_pct": 81.1
+    },
+    {
+      "language": "Finnish",
+      "script": "Latin",
+      "morphology": "Agglutinative",
+      "bpe_ppl": 916.7,
+      "morph_ppl": 202.6,
+      "ppl_reduction_pct": 77.9
+    },
+    {
+      "language": "Hungarian",
+      "script": "Latin",
+      "morphology": "Agglutinative",
+      "bpe_ppl": 1089.8,
+      "morph_ppl": 188.8,
+      "ppl_reduction_pct": 82.7
+    },
+    {
+      "language": "Estonian",
+      "script": "Latin",
+      "morphology": "Agglutinative",
+      "bpe_ppl": 1209.2,
+      "morph_ppl": 235.8,
+      "ppl_reduction_pct": 80.5
+    },
+    {
+      "language": "Georgian",
+      "script": "Georgian",
+      "morphology": "Agglutinative",
+      "bpe_ppl": 1106.2,
+      "morph_ppl": 216.7,
+      "ppl_reduction_pct": 80.4
+    },
+    {
+      "language": "Turkish",
+      "script": "Latin",
+      "morphology": "Agglutinative",
+      "bpe_ppl": 928.9,
+      "morph_ppl": 101.9,
+      "ppl_reduction_pct": 89.0
+    }
+  ],
+  "table7_qualitative": [
+    {
+      "word": "खेलना",
+      "bpe_tokens": [
+        "▁खेल",
+        "ना"
+      ],
+      "bpe_count": 2,
+      "morph_tokens": [
+        "खेल",
+        "ना"
+      ],
+      "morph_count": 2
+    },
+    {
+      "word": "चलती",
+      "bpe_tokens": [
+        "▁चल",
+        "ती"
+      ],
+      "bpe_count": 2,
+      "morph_tokens": [
+        "चल",
+        "ती"
+      ],
+      "morph_count": 2
+    },
+    {
+      "word": "लड़कों",
+      "bpe_tokens": [
+        "▁लड़",
+        "कों"
+      ],
+      "bpe_count": 2,
+      "morph_tokens": [
+        "लड़कों"
+      ],
+      "morph_count": 1
+    },
+    {
+      "word": "राजनीतिक",
+      "bpe_tokens": [
+        "▁राजनीतिक"
+      ],
+      "bpe_count": 1,
+      "morph_tokens": [
+        "राजनीतिक"
+      ],
+      "morph_count": 1
+    },
+    {
+      "word": "पढ़ाई",
+      "bpe_tokens": [
+        "▁पढ़ाई"
+      ],
+      "bpe_count": 1,
+      "morph_tokens": [
+        "पढ़ाई"
+      ],
+      "morph_count": 1
+    },
+    {
+      "word": "दुकानदार",
+      "bpe_tokens": [
+        "▁दुकान",
+        "दार"
+      ],
+      "bpe_count": 2,
+      "morph_tokens": [
+        "दुकान",
+        "दार"
+      ],
+      "morph_count": 2
+    },
+    {
+      "word": "अध्यापकों",
+      "bpe_tokens": [
+        "▁अध",
+        "्याप",
+        "कों"
+      ],
+      "bpe_count": 3,
+      "morph_tokens": [
+        "अध्यापकों"
+      ],
+      "morph_count": 1
+    },
+    {
+      "word": "वाहनवाला",
+      "bpe_tokens": [
+        "▁वाहन",
+        "वाला"
+      ],
+      "bpe_count": 2,
+      "morph_tokens": [
+        "वाहन",
+        "वाला"
+      ],
+      "morph_count": 2
+    },
+    {
+      "word": "सुन्दरता",
+      "bpe_tokens": [
+        "▁सु",
+        "न्द",
+        "र",
+        "ता"
+      ],
+      "bpe_count": 4,
+      "morph_tokens": [
+        "सु",
+        "न्",
+        "दर",
+        "ता"
+      ],
+      "morph_count": 4
+    }
+  ],
+  "per_language": {
+    "hindi": {
+      "language": "hindi",
+      "script": "Devanagari",
+      "morphology": "Fusional",
+      "discovered_suffixes": [
+        "ट",
+        "ना",
+        "कर",
+        "गा",
+        "श",
+        "ला",
+        "स",
+        "रों",
+        "या",
+        "ण",
+        "ने",
+        "का",
+        "ड़",
+        "क",
+        "ए",
+        "ह",
+        "रे",
+        "जी",
+        "शन",
+        "म",
+        "ज",
+        "री",
+        "ओं",
+        "द",
+        "0",
+        "ते",
+        "ले",
+        "रा",
+        "व",
+        "ब",
+        "ड",
+        "ई",
+        "य",
+        "टी",
+        "ल",
+        "त",
+        "र",
+        "नी",
+        "ती",
+        "ता",
+        "ली",
+        "कों",
+        "ग",
+        "गी",
+        "नों",
+        "यों",
+        "पुर",
+        "सी",
+        "प",
+        "न"
+      ]
+    },
+    "arabic": {
+      "language": "arabic",
+      "script": "Arabic",
+      "morphology": "Root-Pattern",
+      "discovered_suffixes": [
+        "د",
+        "س",
+        "ال",
+        "اً",
+        "ت",
+        "ر",
+        "ة",
+        "نا",
+        "ك",
+        "ح",
+        "ا",
+        "وس",
+        "ان",
+        "يين",
+        "ين",
+        "ع",
+        "لة",
+        "ق",
+        "م",
+        "ه",
+        "ية",
+        "وا",
+        "ون",
+        "ن",
+        "ير",
+        "ي",
+        "اء",
+        "ء",
+        "e",
+        "ها",
+        "ري",
+        "لي",
+        "هم",
+        "ب",
+        "تها",
+        "ز",
+        "ني",
+        "ى",
+        "ف",
+        "يا",
+        "ار",
+        "s",
+        "ات",
+        "و",
+        "ما",
+        "ج",
+        "ور",
+        "ته",
+        "رة",
+        "ل"
+      ]
+    },
+    "tamil": {
+      "language": "tamil",
+      "script": "Tamil",
+      "morphology": "Agglutinative",
+      "discovered_suffixes": [
+        "கள்",
+        "ன",
+        "த",
+        "ச்",
+        "யும்",
+        "களை",
+        "க்",
+        "ர்",
+        "ன்",
+        "ருந்து",
+        "யே",
+        "ளின்",
+        "வும்",
+        "களில்",
+        "ந்து",
+        "ம்",
+        "களும்",
+        "றது",
+        "டு",
+        "யில்",
+        "தை",
+        "தில்",
+        "லும்",
+        "n",
+        "களின்",
+        "e",
+        "னர்",
+        "ளும்",
+        "லை",
+        "க்கும்",
+        "கவும்",
+        "கு",
+        "ளை",
+        "s",
+        "டன்",
+        "து",
+        "ளில்",
+        "ட",
+        "க்கு",
+        "ய",
+        "கும்",
+        "ள்",
+        "ப்",
+        "யின்",
+        "ர்கள்",
+        "ல்",
+        "த்",
+        "ஸ்",
+        "டி",
+        "க"
+      ]
+    },
+    "finnish": {
+      "language": "finnish",
+      "script": "Latin",
+      "morphology": "Agglutinative",
+      "discovered_suffixes": [
+        "den",
+        "it",
+        "la",
+        "nen",
+        "sia",
+        "sta",
+        "aan",
+        "et",
+        "ia",
+        "ä",
+        "r",
+        "ta",
+        "sä",
+        "sen",
+        "a",
+        "an",
+        "ssa",
+        "en",
+        "lla",
+        "ssä",
+        "o",
+        "tä",
+        "ten",
+        "y",
+        "na",
+        "us",
+        "een",
+        "lle",
+        "n",
+        "sa",
+        "t",
+        "aa",
+        "ti",
+        "e",
+        "iin",
+        "at",
+        "ksi",
+        "i",
+        "le",
+        "set",
+        "ien",
+        "u",
+        "s",
+        "si",
+        "lä",
+        "än",
+        "stä",
+        "in",
+        "ja",
+        "on"
+      ]
+    },
+    "hungarian": {
+      "language": "hungarian",
+      "script": "Latin",
+      "morphology": "Agglutinative",
+      "discovered_suffixes": [
+        "et",
+        "ák",
+        "er",
+        "st",
+        "tt",
+        "ól",
+        "nek",
+        "r",
+        "ai",
+        "z",
+        "ek",
+        "ta",
+        "ra",
+        "ak",
+        "re",
+        "es",
+        "a",
+        "k",
+        "an",
+        "ni",
+        "ok",
+        "ban",
+        "át",
+        "en",
+        "ő",
+        "l",
+        "kat",
+        "el",
+        "ben",
+        "o",
+        "y",
+        "us",
+        "n",
+        "t",
+        "ó",
+        "e",
+        "ől",
+        "ás",
+        "al",
+        "d",
+        "at",
+        "i",
+        "ét",
+        "s",
+        "nt",
+        "m",
+        "g",
+        "ja",
+        "nak",
+        "on"
+      ]
+    },
+    "estonian": {
+      "language": "estonian",
+      "script": "Latin",
+      "morphology": "Agglutinative",
+      "discovered_suffixes": [
+        "ri",
+        "ist",
+        "ga",
+        "ia",
+        "st",
+        "lt",
+        "v",
+        "ad",
+        "r",
+        "sed",
+        "eks",
+        "te",
+        "ust",
+        "ega",
+        "ks",
+        "es",
+        "a",
+        "ni",
+        "k",
+        "ide",
+        "ise",
+        "use",
+        "l",
+        "ne",
+        "ste",
+        "is",
+        "el",
+        "o",
+        "de",
+        "est",
+        "us",
+        "na",
+        "n",
+        "t",
+        "ti",
+        "ele",
+        "e",
+        "d",
+        "se",
+        "i",
+        "le",
+        "ine",
+        "u",
+        "id",
+        "s",
+        "ud",
+        "si",
+        "m",
+        "ed",
+        "as"
+      ]
+    },
+    "georgian": {
+      "language": "georgian",
+      "script": "Georgian",
+      "morphology": "Agglutinative",
+      "discovered_suffixes": [
+        "ით",
+        "ვის",
+        "ეს",
+        "ნის",
+        "ც",
+        "ანი",
+        "ილი",
+        "სი",
+        "ისა",
+        "სა",
+        "რ",
+        "ებს",
+        "ა",
+        "და",
+        "ში",
+        "ური",
+        "ან",
+        "ული",
+        "ს",
+        "თან",
+        "თა",
+        "ო",
+        "ზე",
+        "ელი",
+        "მა",
+        "ი",
+        "ე",
+        "ბს",
+        "ლის",
+        "რის",
+        "თ",
+        "ები",
+        "ენ",
+        "ება",
+        "ნ",
+        "ბი",
+        "ის",
+        "მ",
+        "ია",
+        "ბით",
+        "ლ",
+        "დ",
+        "ბა",
+        "დან",
+        "ლი",
+        "ბის",
+        "ად",
+        "ას",
+        "ნი",
+        "რი"
+      ]
+    },
+    "turkish": {
+      "language": "turkish",
+      "script": "Latin",
+      "morphology": "Agglutinative",
+      "discovered_suffixes": [
+        "ler",
+        "ri",
+        "er",
+        "ı",
+        "ın",
+        "nı",
+        "r",
+        "ini",
+        "z",
+        "ek",
+        "ır",
+        "ak",
+        "a",
+        "k",
+        "an",
+        "ni",
+        "ma",
+        "en",
+        "l",
+        "li",
+        "arı",
+        "ne",
+        "eri",
+        "de",
+        "ar",
+        "y",
+        "lar",
+        "ir",
+        "ik",
+        "na",
+        "n",
+        "t",
+        "e",
+        "rı",
+        "sı",
+        "i",
+        "esi",
+        "u",
+        "s",
+        "ası",
+        "iz",
+        "ü",
+        "me",
+        "lı",
+        "si",
+        "in",
+        "m",
+        "ş",
+        "on",
+        "da"
+      ]
+    }
+  }
+}

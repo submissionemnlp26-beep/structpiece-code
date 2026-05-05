@@ -1,0 +1,26 @@
+[
+  {
+    "language": "Hindi",
+    "morph_f1": 62.4,
+    "sp_f1": 59.8,
+    "delta": 2.6
+  },
+  {
+    "language": "Arabic",
+    "morph_f1": 50.3,
+    "sp_f1": 48.1,
+    "delta": 2.2
+  },
+  {
+    "language": "Turkish",
+    "morph_f1": 58.7,
+    "sp_f1": 56.6,
+    "delta": 2.1
+  },
+  {
+    "language": "English",
+    "morph_f1": 36.5,
+    "sp_f1": 39.8,
+    "delta": -3.3
+  }
+]

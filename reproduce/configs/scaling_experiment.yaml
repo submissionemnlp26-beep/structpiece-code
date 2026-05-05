@@ -1,0 +1,16 @@
+languages:
+  - "turkish"
+  - "hindi"
+  - "arabic"
+
+tokenizers:
+  - "bpe"
+  - "unigram"
+  - "morph"
+  
+steps_list:
+  - 500
+  - 1500
+  - 3000
+
+vocab_size: 4000

@@ -25,8 +25,8 @@
         "language": "Turkish",
         "morphology": "Agglutinative",
         "base_llama_acc": 44.5,
-        "sp_bpe_32k_acc": 32.0,
-        "sp_bpe_32k_recovery": 71.9,
+        "sp_bpe_32k_acc": 34.8,
+        "sp_bpe_32k_recovery": 78.3,
         "structpiece_32k_acc": 40.5,
         "structpiece_32k_recovery": 91.0
       },
@@ -35,8 +35,8 @@
         "language": "Hindi",
         "morphology": "Fusional",
         "base_llama_acc": 37.8,
-        "sp_bpe_32k_acc": 26.5,
-        "sp_bpe_32k_recovery": 70.1,
+        "sp_bpe_32k_acc": 28.9,
+        "sp_bpe_32k_recovery": 76.5,
         "structpiece_32k_acc": 33.6,
         "structpiece_32k_recovery": 88.9
       },
@@ -45,8 +45,8 @@
         "language": "Arabic",
         "morphology": "Root-Pattern",
         "base_llama_acc": 36.2,
-        "sp_bpe_32k_acc": 24.6,
-        "sp_bpe_32k_recovery": 68.0,
+        "sp_bpe_32k_acc": 26.9,
+        "sp_bpe_32k_recovery": 74.4,
         "structpiece_32k_acc": 31.8,
         "structpiece_32k_recovery": 87.8
       }
@@ -58,8 +58,8 @@
       "english_avg_structpiece": 59.1,
       "english_avg_structpiece_recovery": 96.3,
       "mrl_avg_base": 39.5,
-      "mrl_avg_sp_bpe": 27.7,
-      "mrl_avg_sp_bpe_recovery": 70.1,
+      "mrl_avg_sp_bpe": 30.2,
+      "mrl_avg_sp_bpe_recovery": 76.4,
       "mrl_avg_structpiece": 35.3,
       "mrl_avg_structpiece_recovery": 89.4
     }

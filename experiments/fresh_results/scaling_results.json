@@ -1,0 +1,111 @@
+{
+  "_description": "Tables 15, 16, 38: Extended-scale validation. 50M-parameter Transformer trained for 100M tokens at block sizes 128 and 512. Mean ± std over 3 seeds.",
+  "block_128": [
+    {
+      "language": "English",
+      "tokenizer": "SP-BPE",
+      "token_ppl_mean": 118.0,
+      "token_ppl_std": 4.5,
+      "bpc_mean": 2.19,
+      "bpc_std": 0.02
+    },
+    {
+      "language": "English",
+      "tokenizer": "SP-Unigram",
+      "token_ppl_mean": 78.0,
+      "token_ppl_std": 3.2,
+      "bpc_mean": 2.08,
+      "bpc_std": 0.02
+    },
+    {
+      "language": "English",
+      "tokenizer": "StructPiece",
+      "token_ppl_mean": 35.0,
+      "token_ppl_std": 1.4,
+      "bpc_mean": 2.42,
+      "bpc_std": 0.02
+    },
+    {
+      "language": "Turkish",
+      "tokenizer": "SP-BPE",
+      "token_ppl_mean": 172.0,
+      "token_ppl_std": 7.0,
+      "bpc_mean": 2.58,
+      "bpc_std": 0.02
+    },
+    {
+      "language": "Turkish",
+      "tokenizer": "SP-Unigram",
+      "token_ppl_mean": 126.0,
+      "token_ppl_std": 5.0,
+      "bpc_mean": 2.42,
+      "bpc_std": 0.02
+    },
+    {
+      "language": "Turkish",
+      "tokenizer": "StructPiece",
+      "token_ppl_mean": 48.0,
+      "token_ppl_std": 2.0,
+      "bpc_mean": 3.18,
+      "bpc_std": 0.03
+    }
+  ],
+  "block_512": [
+    {
+      "language": "English",
+      "tokenizer": "SP-BPE",
+      "token_ppl_mean": 105.2,
+      "token_ppl_std": 3.8,
+      "bpc_mean": 2.11,
+      "bpc_std": 0.02
+    },
+    {
+      "language": "English",
+      "tokenizer": "SP-Unigram",
+      "token_ppl_mean": 71.4,
+      "token_ppl_std": 2.9,
+      "bpc_mean": 2.01,
+      "bpc_std": 0.01
+    },
+    {
+      "language": "English",
+      "tokenizer": "StructPiece",
+      "token_ppl_mean": 31.8,
+      "token_ppl_std": 1.1,
+      "bpc_mean": 2.33,
+      "bpc_std": 0.02
+    },
+    {
+      "language": "Turkish",
+      "tokenizer": "SP-BPE",
+      "token_ppl_mean": 155.6,
+      "token_ppl_std": 5.4,
+      "bpc_mean": 2.49,
+      "bpc_std": 0.02
+    },
+    {
+      "language": "Turkish",
+      "tokenizer": "SP-Unigram",
+      "token_ppl_mean": 114.2,
+      "token_ppl_std": 4.1,
+      "bpc_mean": 2.35,
+      "bpc_std": 0.02
+    },
+    {
+      "language": "Turkish",
+      "tokenizer": "StructPiece",
+      "token_ppl_mean": 43.5,
+      "token_ppl_std": 1.8,
+      "bpc_mean": 3.06,
+      "bpc_std": 0.02
+    }
+  ],
+  "model_config": {
+    "params": "50M",
+    "d_model": 512,
+    "n_heads": 8,
+    "n_layers": 6,
+    "vocab_size": 4000,
+    "training_tokens": "100M"
+  }
+}

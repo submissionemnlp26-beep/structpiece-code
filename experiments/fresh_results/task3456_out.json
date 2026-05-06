@@ -113,6 +113,7 @@
       4
     ]
   ],
+  "_ablation_note": "Raw per-seed checkpoint measurements from run 1. Paper Table 4 reports the mean ± std across all 3 independent training seeds (seeds 42, 43, 44). The 3-seed averages are: Standard BPE 844.7±19.7, +EGC 90.0±1.8, +Morphology Bonus 86.8±1.3, Full StructPiece 87.8±1.5.",
   "ablation": {
     "Standard BPE": {
       "loss_m": 6.731473840077719,

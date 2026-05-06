@@ -45,26 +45,23 @@ from python.pretokenizer import pretokenize, is_devanagari, normalize
 # a zero-shot morphology tokenizer for any language.
 ACTIVE_SUFFIXES: Set[str] = set()
 
-# Larger suffix fragments (3+ grapheme clusters) get a bigger bonus
-LONG_SUFFIX_THRESHOLD = 3
-
 # Bonus weights
-_MORPHOLOGY_BONUS_SHORT = 50.0    # 1-2 cluster suffixes
-_MORPHOLOGY_BONUS_LONG = 100.0    # 3+ cluster suffixes
+_MORPHOLOGY_BONUS = 2.0           # lambda = 2.0 as per paper
 _SCRIPT_CROSS_PENALTY = -500.0    # merging Devanagari with non-Devanagari
-
-# ── V2 Compression-Aware Scoring ─────────────────────────────────────────────
-_COMPRESSION_BONUS = 15.0         # bonus per log(len) of merged token
-_FREQ_GATE_RATIO = 0.3            # morphology bonus multiplier for high-freq pairs
 
 
 # ─── Dynamic Suffix Discovery ─────────────────────────────────────────────────
 
-def discover_suffixes(word_freqs: WordFreqs, top_k: int = 50, min_unique_stems: int = 20) -> Set[str]:
+def discover_suffixes(word_freqs: WordFreqs, top_k: int = 50, min_unique_stems: Optional[int] = None) -> Set[str]:
     """
     Unsupervised morphology discovery: finding productive suffixes by calculating
     how many unique stems a terminal string attaches to.
     """
+    if min_unique_stems is None:
+        num_unique_words = len(word_freqs)
+        # Threshold: tau(|W|) = 3 * log(|W|) + 2
+        min_unique_stems = max(1, int(3.0 * math.log(num_unique_words) + 2.0)) if num_unique_words > 0 else 1
+
     suffix_stems = defaultdict(set)
     for word_tuple, _ in word_freqs.items():
         word_str = "".join(word_tuple)
@@ -108,14 +105,10 @@ def morphology_bonus(merged: str) -> float:
     """
     Return a positive bonus if *merged* ends with a learned productive suffix.
     """
-    best = 0.0
     for suf in ACTIVE_SUFFIXES:
         if merged.endswith(suf):
-            if len(suf) >= LONG_SUFFIX_THRESHOLD:
-                best = max(best, _MORPHOLOGY_BONUS_LONG)
-            else:
-                best = max(best, _MORPHOLOGY_BONUS_SHORT)
-    return best
+            return _MORPHOLOGY_BONUS
+    return 0.0
 
 
 def script_penalty(a: str, b: str) -> float:
@@ -140,30 +133,6 @@ def adjusted_score(freq: int, a: str, b: str) -> float:
     """
     merged = a + b
     return freq + morphology_bonus(merged) + script_penalty(a, b)
-
-
-def adjusted_score_v2(freq: int, a: str, b: str, freq_threshold: float) -> float:
-    """
-    V2 scoring: frequency-gated morphology + compression bonus.
-
-    For high-frequency pairs (freq >= threshold): morphology bonus is gated
-    down to 30%, letting compression dominate. For low-frequency pairs:
-    full morphology bonus preserves downstream-useful boundaries.
-
-    A log-length compression bonus encourages building longer merged tokens,
-    reducing token inflation and improving BPC.
-
-        score = freq
-              + morph_bonus(a+b) * gate(freq)
-              + COMPRESSION_BONUS * log(len(a+b))
-              + script_penalty(a, b)
-    """
-    merged = a + b
-    gate = 1.0 if freq < freq_threshold else _FREQ_GATE_RATIO
-    return (freq
-            + morphology_bonus(merged) * gate
-            + _COMPRESSION_BONUS * math.log(max(len(merged), 1))
-            + script_penalty(a, b))
 
 
 # ─── Word ↔ pair bookkeeping ────────────────────────────────────────────────
@@ -324,16 +293,8 @@ def train_bpe(
         best_pair = None
         best_score = float("-inf")
 
-        if variant == "v2":
-            # Compute median frequency for gating threshold
-            freqs_list = sorted(pair_counts.values())
-            freq_threshold = freqs_list[len(freqs_list) // 2] if freqs_list else 1.0
-
         for pair, freq in pair_counts.items():
-            if variant == "v2":
-                score = adjusted_score_v2(freq, pair[0], pair[1], freq_threshold)
-            else:
-                score = adjusted_score(freq, pair[0], pair[1])
+            score = adjusted_score(freq, pair[0], pair[1])
             if score > best_score:
                 best_score = score
                 best_pair = pair

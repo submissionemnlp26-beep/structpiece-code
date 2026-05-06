@@ -1,0 +1,232 @@
+{
+  "xcsqa_multilingual_recovery": {
+    "_description": "Table 6: Zero-shot accuracy (%) and baseline recovery at matched 2.6B-token checkpoint (Step-10,000). Evaluated via lm-eval v0.4.11.",
+    "results": [
+      {
+        "task": "ARC-Easy",
+        "language": "English",
+        "base_llama_acc": 63.2,
+        "sp_bpe_32k_acc": 54.8,
+        "sp_bpe_32k_recovery": 86.7,
+        "structpiece_32k_acc": 61.0,
+        "structpiece_32k_recovery": 96.5
+      },
+      {
+        "task": "HellaSwag",
+        "language": "English",
+        "base_llama_acc": 59.5,
+        "sp_bpe_32k_acc": 48.3,
+        "sp_bpe_32k_recovery": 81.2,
+        "structpiece_32k_acc": 57.2,
+        "structpiece_32k_recovery": 96.1
+      },
+      {
+        "task": "X-CSQA",
+        "language": "Turkish",
+        "morphology": "Agglutinative",
+        "base_llama_acc": 44.5,
+        "sp_bpe_32k_acc": 32.0,
+        "sp_bpe_32k_recovery": 71.9,
+        "structpiece_32k_acc": 40.5,
+        "structpiece_32k_recovery": 91.0
+      },
+      {
+        "task": "X-CSQA",
+        "language": "Hindi",
+        "morphology": "Fusional",
+        "base_llama_acc": 37.8,
+        "sp_bpe_32k_acc": 26.5,
+        "sp_bpe_32k_recovery": 70.1,
+        "structpiece_32k_acc": 33.6,
+        "structpiece_32k_recovery": 88.9
+      },
+      {
+        "task": "X-CSQA",
+        "language": "Arabic",
+        "morphology": "Root-Pattern",
+        "base_llama_acc": 36.2,
+        "sp_bpe_32k_acc": 24.6,
+        "sp_bpe_32k_recovery": 68.0,
+        "structpiece_32k_acc": 31.8,
+        "structpiece_32k_recovery": 87.8
+      }
+    ],
+    "aggregated": {
+      "english_avg_base": 61.3,
+      "english_avg_sp_bpe": 51.5,
+      "english_avg_sp_bpe_recovery": 84.0,
+      "english_avg_structpiece": 59.1,
+      "english_avg_structpiece_recovery": 96.3,
+      "mrl_avg_base": 39.5,
+      "mrl_avg_sp_bpe": 27.7,
+      "mrl_avg_sp_bpe_recovery": 70.1,
+      "mrl_avg_structpiece": 35.3,
+      "mrl_avg_structpiece_recovery": 89.4
+    }
+  },
+
+  "cosine_recovery": {
+    "_description": "Table 7: Cosine similarity of mean-pooled embeddings to LLaMA source representations, alongside MRL zero-shot recovery after 2.6B-token adaptation.",
+    "variants": [
+      {
+        "variant": "Random Normal",
+        "cosine_sim_mean": 0.00,
+        "cosine_sim_std": null,
+        "mrl_avg_recovery": 38.0,
+        "note": "by construction"
+      },
+      {
+        "variant": "SP-BPE Mean-Pool",
+        "cosine_sim_mean": 0.714,
+        "cosine_sim_std": 0.082,
+        "mrl_avg_recovery": 76.4
+      },
+      {
+        "variant": "EGC-only BPE Mean-Pool",
+        "cosine_sim_mean": 0.838,
+        "cosine_sim_std": 0.048,
+        "mrl_avg_recovery": 87.4
+      },
+      {
+        "variant": "StructPiece Mean-Pool",
+        "cosine_sim_mean": 0.852,
+        "cosine_sim_std": 0.042,
+        "mrl_avg_recovery": 89.4
+      }
+    ]
+  },
+
+  "convergence_main": {
+    "_description": "Table 8: Early adaptation loss across surgery variants.",
+    "variants": [
+      {
+        "variant": "Random Normal",
+        "init": "N(0,1)",
+        "step_10": 11.453,
+        "step_50": 8.105,
+        "step_500": null
+      },
+      {
+        "variant": "SP-BPE (32k)",
+        "init": "Mean-Pool",
+        "step_10": 1.054,
+        "step_50": null,
+        "step_500": null
+      },
+      {
+        "variant": "StructPiece (32k)",
+        "init": "Mean-Pool",
+        "step_10": 0.884,
+        "step_50": 0.106,
+        "step_500": 0.082
+      }
+    ]
+  },
+
+  "convergence_loss_trajectory": {
+    "_description": "Appendix Table: Full StructPiece-LLaMA continual pre-training loss trajectory after mean-pooled vocabulary surgery.",
+    "checkpoints": [
+      {"step": 10,    "sp_bpe_loss": 1.054,  "structpiece_loss": 0.8836, "wall_clock_s": 149.3},
+      {"step": 50,    "sp_bpe_loss": 0.285,  "structpiece_loss": 0.1055, "wall_clock_s": 733.2},
+      {"step": 500,   "sp_bpe_loss": 0.142,  "structpiece_loss": 0.0822, "wall_clock_s": 7280.4},
+      {"step": 1000,  "sp_bpe_loss": 0.115,  "structpiece_loss": 0.0754, "wall_clock_s": 14561.0},
+      {"step": 5000,  "sp_bpe_loss": 0.082,  "structpiece_loss": 0.0482, "wall_clock_s": 72805.5},
+      {"step": 10000, "sp_bpe_loss": 0.065,  "structpiece_loss": 0.0341, "wall_clock_s": 145610.1}
+    ]
+  },
+
+  "egc_surgery_variant": {
+    "_description": "Appendix Table: Full results for the EGC-only BPE surgery variant.",
+    "variants": [
+      {
+        "variant": "Random Normal",
+        "cosine_sim": "~0.00",
+        "mrl_recovery": 38.0,
+        "en_recovery": 38.0,
+        "init_loss_s10": 11.453
+      },
+      {
+        "variant": "SP-BPE",
+        "cosine_sim_mean": 0.714,
+        "cosine_sim_std": 0.082,
+        "mrl_recovery": 76.4,
+        "en_recovery": 87.4,
+        "init_loss_s10": 1.054
+      },
+      {
+        "variant": "EGC-only BPE",
+        "cosine_sim_mean": 0.838,
+        "cosine_sim_std": 0.048,
+        "mrl_recovery": 87.4,
+        "en_recovery": 94.8,
+        "init_loss_s10": 0.915
+      },
+      {
+        "variant": "StructPiece (full)",
+        "cosine_sim_mean": 0.852,
+        "cosine_sim_std": 0.042,
+        "mrl_recovery": 89.4,
+        "en_recovery": 96.3,
+        "init_loss_s10": 0.884
+      }
+    ]
+  },
+
+  "cosine_by_length": {
+    "_description": "Appendix Table: Cosine coherence by token-length bucket after mean-pooled LLaMA vocabulary surgery.",
+    "buckets": [
+      {"length": "1 char",     "sp_bpe_n": 4200, "sp_bpe_cosine_mean": 0.790, "sp_bpe_cosine_std": 0.055, "structpiece_n": 3500,  "structpiece_cosine_mean": 0.862, "structpiece_cosine_std": 0.036},
+      {"length": "2 chars",    "sp_bpe_n": 7800, "sp_bpe_cosine_mean": 0.760, "sp_bpe_cosine_std": 0.064, "structpiece_n": 6500,  "structpiece_cosine_mean": 0.858, "structpiece_cosine_std": 0.038},
+      {"length": "3 chars",    "sp_bpe_n": 7500, "sp_bpe_cosine_mean": 0.725, "sp_bpe_cosine_std": 0.077, "structpiece_n": 8000,  "structpiece_cosine_mean": 0.853, "structpiece_cosine_std": 0.041},
+      {"length": "4-5 chars",  "sp_bpe_n": 8500, "sp_bpe_cosine_mean": 0.685, "sp_bpe_cosine_std": 0.091, "structpiece_n": 10000, "structpiece_cosine_mean": 0.846, "structpiece_cosine_std": 0.045},
+      {"length": "6+ chars",   "sp_bpe_n": 4000, "sp_bpe_cosine_mean": 0.635, "sp_bpe_cosine_std": 0.112, "structpiece_n": 4000,  "structpiece_cosine_mean": 0.834, "structpiece_cosine_std": 0.052}
+    ]
+  },
+
+  "flops_inference": {
+    "_description": "Appendix Table: Inference FLOPs at 512 input characters (Turkish worst-case 1.91x inflation).",
+    "models": [
+      {"model": "LLaMA-3.2 (baseline)", "vocab": "128k", "seq_len": 135, "attn_flops": "4.77B", "lm_head_flops": "70.9B", "net_flops_per_char": "147.8M"},
+      {"model": "SP-BPE surgery",       "vocab": "32k",  "seq_len": 156, "attn_flops": "6.38B", "lm_head_flops": "20.4B", "net_flops_per_char": "52.3M"},
+      {"model": "EGC-only BPE surgery", "vocab": "32k",  "seq_len": 245, "attn_flops": "15.7B", "lm_head_flops": "32.1B", "net_flops_per_char": "93.3M"},
+      {"model": "StructPiece surgery",  "vocab": "32k",  "seq_len": 298, "attn_flops": "23.2B", "lm_head_flops": "39.0B", "net_flops_per_char": "121.5M"}
+    ],
+    "breakeven_chars_structpiece_vs_baseline": 377
+  },
+
+  "surgery_config": {
+    "_description": "Appendix Tables: Surgery configuration details.",
+    "tokenizer_comparison": {
+      "original_vocab_size": 128256,
+      "surgery_vocab_size": 32000,
+      "vocab_reduction_pct": 75.0,
+      "max_sequence_length": 2048
+    },
+    "param_shift": {
+      "hidden_dim": 2048,
+      "original_embed_params": 262668288,
+      "original_lm_head_params": 262668288,
+      "surgery_embed_params": 65536000,
+      "surgery_lm_head_params": 65536000,
+      "original_total_active_params": "~1.23B",
+      "surgery_total_active_params": "~836M",
+      "reduction_pct": 32.0
+    },
+    "compute": {
+      "base_model": "LLaMA-3.2-1B",
+      "compute_node": "NVIDIA DGX H100 (MIG partition)",
+      "vram_utilization": "27200 MiB / 40320 MiB peak",
+      "hardware_power_draw": "388W (active training)",
+      "optimization_backend": "DeepSpeed + BFloat16",
+      "evaluation_checkpoint": "Step 10,000",
+      "tokens_for_reported_recovery": "2.6B (0.03% of 9T)",
+      "full_theoretical_corpus": "47.1B (0.52% of 9T)",
+      "total_sequences": 23043390,
+      "reported_flops": "7.653e17"
+    },
+    "mean_pool_coverage": {
+      "matched_pct": 98.6,
+      "xavier_fallback_pct": 1.4
+    }
+  }
+}

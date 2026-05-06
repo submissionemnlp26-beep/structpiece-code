@@ -8,36 +8,70 @@ using mean-pooled initialization (Equation 6 and 7 in the paper).
 
 Hardware requirement: ~80GB VRAM to load LLaMA-3.2-1B and perform the
 surgery if running in full precision, or ~40GB if using BF16/DeepSpeed.
+
+Usage:
+    PYTHONPATH=. python reproduce/scripts/surgery_init.py \
+        --base-model meta-llama/Llama-3.2-1B \
+        --structpiece-vocab reproduce/models/multilingual_structpiece \
+        --output reproduce/results/surgery_init/
 """
 
 import argparse
 import json
 import os
+import sys
+from pathlib import Path
+
 import torch
 import torch.nn as nn
 from tqdm import tqdm
 from transformers import AutoModelForCausalLM, AutoTokenizer
+
+# Resolve project root and add python/ to path for adaptive_bpe import
+ROOT = Path(__file__).resolve().parent.parent.parent
+sys.path.insert(0, str(ROOT / "python"))
+sys.path.insert(0, str(ROOT))
+
 from adaptive_bpe import IndicTokenizer
 
-def get_greedy_decomposition(target_str: str, base_vocab: dict) -> list[str]:
-    """Greedy left-to-right decomposition using the base vocabulary."""
-    # Simplified greedy matching logic
+def build_prefix_trie(vocab: dict) -> dict:
+    """Build a prefix trie from vocabulary for O(max_len) lookup per position."""
+    trie = {}
+    for token in vocab:
+        node = trie
+        for ch in token:
+            node = node.setdefault(ch, {})
+        node["_end"] = True
+    return trie
+
+
+def get_greedy_decomposition(target_str: str, base_vocab: dict,
+                              trie: dict = None) -> list[str]:
+    """
+    Greedy left-to-right decomposition using the base vocabulary.
+
+    Uses a prefix trie for O(n * max_token_len) complexity instead of
+    O(n^2 * |V|). Falls back to single-character pieces for unmatched spans.
+    """
+    if trie is None:
+        trie = build_prefix_trie(base_vocab)
+
     pieces = []
     i = 0
     n = len(target_str)
     while i < n:
-        best_match = None
-        best_len = 0
-        # Search for longest matching prefix in base vocab
-        for j in range(i + 1, n + 1):
-            sub = target_str[i:j]
-            if sub in base_vocab and (j - i) > best_len:
-                best_match = sub
-                best_len = j - i
-        
-        if best_match:
-            pieces.append(best_match)
-            i += best_len
+        node = trie
+        best_end = -1
+        j = i
+        while j < n and target_str[j] in node:
+            node = node[target_str[j]]
+            j += 1
+            if "_end" in node:
+                best_end = j
+
+        if best_end > i:
+            pieces.append(target_str[i:best_end])
+            i = best_end
         else:
             # Fallback for unmatched characters
             pieces.append(target_str[i])
@@ -81,6 +115,9 @@ def main():
     # Create reverse lookup for base vocab to get IDs
     base_str_to_id = {k: v for k, v in base_vocab.items()}
     
+    # Build prefix trie once for O(n * max_token_len) decomposition
+    vocab_trie = build_prefix_trie(base_str_to_id)
+    
     for token_str, target_id in tqdm(target_vocab.items()):
         # Try direct match first
         if token_str in base_str_to_id:
@@ -89,7 +126,7 @@ def main():
             new_lm_head[target_id] = base_lm_head[base_id]
         else:
             # Equation 6: Mean-pool over constituent base tokens
-            pieces = get_greedy_decomposition(token_str, base_str_to_id)
+            pieces = get_greedy_decomposition(token_str, base_str_to_id, trie=vocab_trie)
             piece_ids = [base_str_to_id[p] for p in pieces if p in base_str_to_id]
             
             if piece_ids:

@@ -13,6 +13,9 @@ Key design decisions
   the same byte representation.
 """
 
+import os
+import sys
+import ctypes
 import unicodedata
 from functools import lru_cache
 from typing import List
@@ -70,9 +73,36 @@ def normalize(text: str) -> str:
 # Pre-compiled EGC regex (avoids re.compile on every call)
 _EGC_PATTERN = re.compile(r"\X")
 
+# Load C++ EGC kernel
+_LIB_DIR = os.path.join(os.path.dirname(__file__), "..", "cpp", "build")
+_ext = ".dylib" if sys.platform == "darwin" else ".so"
+_LIB_PATH = os.path.join(_LIB_DIR, f"libindic_tokenizer{_ext}")
+
+try:
+    _lib = ctypes.CDLL(_LIB_PATH)
+    _lib.c_split_grapheme_clusters.argtypes = [ctypes.c_char_p]
+    _lib.c_split_grapheme_clusters.restype = ctypes.c_void_p
+    _lib.c_free_string.argtypes = [ctypes.c_void_p]
+    _lib.c_free_string.restype = None
+    _C_API_AVAILABLE = True
+except OSError:
+    _C_API_AVAILABLE = False
+
 
 def grapheme_clusters(text: str) -> List[str]:
     """Split *text* into Unicode Extended Grapheme Clusters."""
+    if _C_API_AVAILABLE:
+        if not text:
+            return []
+        encoded = text.encode("utf-8")
+        ptr = _lib.c_split_grapheme_clusters(encoded)
+        if not ptr:
+            return []
+        c_str = ctypes.cast(ptr, ctypes.c_char_p).value
+        decoded = c_str.decode("utf-8")
+        _lib.c_free_string(ptr)
+        return decoded.split('\x1F')
+    
     return _EGC_PATTERN.findall(text)
 
 
@@ -153,7 +183,7 @@ def pretokenize(text: str) -> List[str]:
     become their own tokens).
     """
     text = normalize(text)
-    clusters = _EGC_PATTERN.findall(text)
+    clusters = grapheme_clusters(text)
 
     if not clusters:
         return []

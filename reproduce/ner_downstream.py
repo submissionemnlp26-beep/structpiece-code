@@ -96,7 +96,7 @@ class BiLSTMTagger(nn.Module):
         super().__init__()
         self.embed = nn.Embedding(vocab_size, embed_dim, padding_idx=0)
         self.dropout = nn.Dropout(0.3)  # Improvised change: Dropout heavily penalizes BPE large-chunk memorization
-        self.lstm = nn.LSTM(embed_dim, hidden_dim, num_layers=1,
+        self.lstm = nn.LSTM(embed_dim, hidden_dim, num_layers=2,
                             bidirectional=True, batch_first=True)
         self.fc = nn.Linear(hidden_dim * 2, num_tags)
     
@@ -107,7 +107,7 @@ class BiLSTMTagger(nn.Module):
 
 # ── Training loop ────────────────────────────────────────────────────────────
 
-def train_and_eval(train_data, val_data, vocab_size, epochs=10, lr=1e-3, batch_size=16, seeds=3):
+def train_and_eval(train_data, val_data, vocab_size, epochs=15, lr=1e-3, batch_size=16, seeds=3):
     device = "mps" if torch.backends.mps.is_available() else "cpu"
     
     train_ds = NERDataset(train_data)

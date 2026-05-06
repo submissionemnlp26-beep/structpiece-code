@@ -23,5 +23,6 @@ target_compile_definitions(tokenizer_test PRIVATE TOKENIZER_ENGINE_MAIN)
 add_library(indic_tokenizer SHARED
     unicode_utils.cpp
     tokenizer_engine.cpp
+    c_api.cpp
 )
 target_compile_definitions(indic_tokenizer PRIVATE INDIC_TOKENIZER_SHARED)

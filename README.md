@@ -79,16 +79,18 @@ pip install -r requirements.txt
 
 ### Read This First
 
-See **[`reproduce/RESULTS_INTEGRITY.md`](reproduce/RESULTS_INTEGRITY.md)** for a transparent accounting of what can be reproduced locally versus what required our NVIDIA H100 cluster.
+See **[`reproduce/RESULTS_INTEGRITY.md`](reproduce/RESULTS_INTEGRITY.md)** for a transparent accounting of what can be reproduced locally versus what required our NVIDIA H100 cluster, including a complete Table → JSON → Script audit map.
 
 **Short answer:**
-- ✅ All NanoLM intrinsic experiments (Tables 1–4, 10) → run locally
-- ✅ All downstream probes (Tables 5, 8, 9, 10) → run locally
-- ⚠️ LLaMA-3.2-1B vocabulary surgery (Tables 6, 7, 15) → requires ~80GB VRAM
+- ✅ All NanoLM intrinsic experiments (Tables 1–4) → run locally
+- ✅ All downstream probes (Tables 5, 8, 9, 14, 17) → run locally
+- ✅ Morfessor/BPE-knockout baselines (Table 16) → run locally
+- ⚠️ LLaMA-3.2-1B vocabulary surgery (Tables 6, 7, 8) → requires ~40GB VRAM
+- ⚠️ Extended scale validation (Tables 15, 38) → GPU recommended
 
 ---
 
-### Phase 1: NanoLM Intrinsic Experiments (Paper Tables 1, 2, 3, 4)
+### Phase 1: NanoLM Intrinsic Experiments (Tables 1, 2, 3, 10)
 
 Trains StructPiece, SP-BPE, and SP-Unigram from scratch on each language, then trains a NanoLM under an identical fixed token budget (2,048,000 tokens per run).
 
@@ -111,19 +113,25 @@ Absolute PPL values will vary slightly from the paper (H100 vs. local hardware, 
 
 ---
 
-### Phase 2: EGC & Morphology Ablation (Paper Table 4)
+### Phase 2: EGC & Morphology Ablation (Table 4)
 
 ```bash
-PYTHONPATH=. python reproduce/run_core_reeval.py
+PYTHONPATH=. python reproduce/run_core_reeval.py --langs hindi english
 ```
 
 ---
 
-### Phase 3: Downstream Probes — NER, POS, XNLI (Tables 5, 8, 9, 10)
+### Phase 3: Downstream Probes — NER, POS, XNLI (Tables 5, 8, 9, 14, 17)
 
 ```bash
-# NER on WikiANN (Hindi, Arabic, Turkish, English):
+# BiLSTM NER on WikiANN (Hindi, Arabic, Turkish, English):
 PYTHONPATH=. python reproduce/ner_downstream.py
+
+# mBERT NER fine-tuning (Table 5, GPU recommended):
+PYTHONPATH=. python reproduce/ner_mbert.py --langs hindi,arabic,turkish,english
+
+# Verify cached mBERT results without GPU:
+PYTHONPATH=. python reproduce/ner_mbert.py --verify-only
 
 # POS tagging + XNLI:
 PYTHONPATH=. python reproduce/extended_downstream.py
@@ -133,27 +141,73 @@ PYTHONPATH=. python reproduce/extended_downstream.py
 
 ---
 
-### Phase 4: Vocabulary Surgery (Tables 6, 7, 15) — GPU Cluster Required
+### Phase 4: Vocabulary Surgery (Tables 6, 7, 8) — GPU Cluster Required
 
 ```bash
-# See reproduce/RESULTS_INTEGRITY.md for hardware requirements.
-# Surgery init script (verifiable without running):
-cat reproduce/scripts/surgery_init.py
+# Step 1: Initialize surgery
+PYTHONPATH=. python reproduce/scripts/surgery_init.py \
+    --base-model meta-llama/Llama-3.2-1B \
+    --structpiece-vocab reproduce/models/multilingual_structpiece \
+    --output reproduce/results/surgery_init/
+
+# Step 2: Continual pre-training
+deepspeed --num_gpus=8 reproduce/scripts/run_continual_pretraining.py \
+    --model_path reproduce/results/surgery_init/ \
+    --data_dir datasets/ \
+    --output_dir reproduce/results/surgery_cpt/
+
+# Step 3: Evaluate
+PYTHONPATH=. python reproduce/scripts/run_surgery_eval.py \
+    --model_path reproduce/results/surgery_cpt/ \
+    --variant "StructPiece (32k)"
+
+# Verify cached results without GPU:
+PYTHONPATH=. python reproduce/scripts/run_surgery_eval.py --verify-only
+PYTHONPATH=. python reproduce/scripts/compute_cosine_coherence.py --verify-only
+PYTHONPATH=. python reproduce/scripts/run_continual_pretraining.py --verify-only
+```
+
+---
+
+### Phase 5: Morfessor & BPE-knockout Baselines (Table 16)
+
+```bash
+# Full training (requires morfessor package):
+PYTHONPATH=. python reproduce/run_morfessor_baseline.py --lang turkish
+
+# Verify cached results:
+PYTHONPATH=. python reproduce/run_morfessor_baseline.py --verify-only
+```
+
+---
+
+### Phase 6: Extended Scale Validation (Tables 15, 38)
+
+```bash
+# Full training (GPU recommended):
+PYTHONPATH=. python reproduce/run_extended_scale.py --langs english,turkish
+
+# Verify cached results:
+PYTHONPATH=. python reproduce/run_extended_scale.py --verify-only
 ```
 
 ---
 
 ## Key Claims and Where to Find Evidence
 
-| Paper Claim | Tables | Verification Script |
-|---|---|---|
-| StructPiece PPL < SP-BPE PPL across 9 languages | 1, 10 | `reproduce/run_nanolm_experiments.py` |
-| StructPiece BPC > SP-BPE BPC (compression tradeoff) | 1, 10 | `reproduce/run_nanolm_experiments.py` |
-| Advantage persists under fixed token budget | 2 | `reproduce/run_nanolm_experiments.py` |
-| Advantage not explained by granularity alone | 3 | `reproduce/run_nanolm_experiments.py` |
-| EGC accounts for ~90% of PPL gain in ablation | 4 | `reproduce/run_core_reeval.py` |
-| NER F1 improves on MRLs, reverses on English | 5 | `reproduce/ner_downstream.py` |
-| LLaMA surgery: StructPiece recovers 89.4% | 6, 7 | GPU cluster required |
+| Paper Claim | Tables | Script | JSON Log |
+|---|---|---|---|
+| StructPiece PPL < SP-BPE PPL across 9 languages | 1, 10 | `run_nanolm_experiments.py` | `all_results.json` |
+| StructPiece BPC > SP-BPE BPC (compression tradeoff) | 1, 10 | `run_nanolm_experiments.py` | `all_results.json` |
+| Advantage persists under fixed token budget | 2 | `run_nanolm_experiments.py` | `all_results.json` |
+| Advantage not explained by granularity alone | 3 | `run_nanolm_experiments.py` | `all_results.json` |
+| EGC accounts for ~90% of PPL gain in ablation | 4 | `run_core_reeval.py` | `task3456_out.json` |
+| NER F1 improves on MRLs, reverses on English | 5 | `ner_mbert.py` | `mbert_ner_results.json` |
+| LLaMA surgery: StructPiece recovers 89.4% MRL | 6 | `scripts/run_surgery_eval.py` | `surgery_results.json` |
+| Cosine coherence monotonically orders recovery | 7 | `scripts/compute_cosine_coherence.py` | `surgery_results.json` |
+| StructPiece converges faster after surgery | 8 | `scripts/run_continual_pretraining.py` | `surgery_results.json` |
+| Ordering holds at 50M/100M scale | 15, 38 | `run_extended_scale.py` | `scaling_results.json` |
+| Morfessor-BPE improves but below StructPiece | 16 | `run_morfessor_baseline.py` | `morfessor_results.json` |
 
 ---
 

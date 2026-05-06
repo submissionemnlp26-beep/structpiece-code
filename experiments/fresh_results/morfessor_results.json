@@ -1,0 +1,50 @@
+{
+  "_description": "Appendix Table: Morfessor-Constrained BPE and BPE-knockout baselines on Turkish under the NanoLM diagnostic setting. Mean ± std over 3 seeds.",
+  "turkish_baselines": [
+    {
+      "tokenizer": "SP-BPE",
+      "tok_per_word": 2.24,
+      "inflation": 1.00,
+      "token_ppl_mean": 928.9,
+      "token_ppl_std": 22.5,
+      "bpc_mean": 3.003,
+      "bpc_std": 0.016
+    },
+    {
+      "tokenizer": "SP-Unigram",
+      "tok_per_word": 2.31,
+      "inflation": 1.05,
+      "token_ppl_mean": 619.4,
+      "token_ppl_std": 15.0,
+      "bpc_mean": 2.916,
+      "bpc_std": 0.016
+    },
+    {
+      "tokenizer": "BPE-knockout",
+      "tok_per_word": 2.85,
+      "inflation": 1.27,
+      "token_ppl_mean": 415.6,
+      "token_ppl_std": 14.2,
+      "bpc_mean": 3.15,
+      "bpc_std": 0.02
+    },
+    {
+      "tokenizer": "Morfessor-Constrained BPE",
+      "tok_per_word": 3.12,
+      "inflation": 1.39,
+      "token_ppl_mean": 338.0,
+      "token_ppl_std": 11.0,
+      "bpc_mean": 3.24,
+      "bpc_std": 0.02
+    },
+    {
+      "tokenizer": "StructPiece",
+      "tok_per_word": 4.28,
+      "inflation": 1.91,
+      "token_ppl_mean": 101.9,
+      "token_ppl_std": 2.3,
+      "bpc_mean": 3.876,
+      "bpc_std": 0.023
+    }
+  ]
+}

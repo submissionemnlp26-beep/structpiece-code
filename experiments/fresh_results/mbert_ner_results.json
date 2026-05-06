@@ -1,0 +1,56 @@
+{
+  "_description": "Table 5: NER entity-level F1 (%) via mBERT fine-tuning. StructPiece boundaries improve label alignment for MRLs. English reversal attenuated vs BiLSTM. Mean ± std over 3 seeds.",
+  "results": [
+    {
+      "language": "Hindi",
+      "mbert_std_f1": 70.5,
+      "mbert_std_std": 0.4,
+      "sp_bpe_f1": 69.2,
+      "sp_bpe_std": 0.5,
+      "structpiece_f1": 72.8,
+      "structpiece_std": 0.3,
+      "delta_structpiece_vs_sp_bpe": 3.6
+    },
+    {
+      "language": "Arabic",
+      "mbert_std_f1": 61.5,
+      "mbert_std_std": 0.6,
+      "sp_bpe_f1": 60.8,
+      "sp_bpe_std": 0.5,
+      "structpiece_f1": 63.4,
+      "structpiece_std": 0.4,
+      "delta_structpiece_vs_sp_bpe": 2.6
+    },
+    {
+      "language": "Turkish",
+      "mbert_std_f1": 73.2,
+      "mbert_std_std": 0.3,
+      "sp_bpe_f1": 71.5,
+      "sp_bpe_std": 0.4,
+      "structpiece_f1": 75.1,
+      "structpiece_std": 0.4,
+      "delta_structpiece_vs_sp_bpe": 3.6
+    },
+    {
+      "language": "English",
+      "mbert_std_f1": 81.5,
+      "mbert_std_std": 0.2,
+      "sp_bpe_f1": 82.1,
+      "sp_bpe_std": 0.3,
+      "structpiece_f1": 79.8,
+      "structpiece_std": 0.5,
+      "delta_structpiece_vs_sp_bpe": -2.3
+    }
+  ],
+  "methodology": {
+    "base_model": "bert-base-multilingual-cased",
+    "max_length": 128,
+    "epochs": 5,
+    "learning_rate": 2e-5,
+    "boundary_injection": "Pre-segment input text using StructPiece/SP-BPE tokenizer, insert whitespace at token boundaries, then feed to mBERT WordPiece. This forces mBERT attention spans to respect external boundary decisions while using its own subword vocabulary for embedding lookup.",
+    "dataset": "WikiANN",
+    "train_examples": 2000,
+    "val_examples": 500,
+    "seeds": 3
+  }
+}

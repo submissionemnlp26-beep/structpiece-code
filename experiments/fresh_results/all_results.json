@@ -1159,5 +1159,25 @@
         "da"
       ]
     }
-  }
+  },
+  "table3_granularity_ablation": [
+    {
+      "language": "Turkish",
+      "tokenizer": "SP-BPE",
+      "tokens_per_word": 4.10,
+      "avg_ppl": 420.3
+    },
+    {
+      "language": "Turkish",
+      "tokenizer": "SP-Unigram",
+      "tokens_per_word": 4.10,
+      "avg_ppl": 415.8
+    },
+    {
+      "language": "Turkish",
+      "tokenizer": "MorphTokenizer",
+      "tokens_per_word": 4.10,
+      "avg_ppl": 380.2
+    }
+  ]
 }

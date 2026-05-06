@@ -3,6 +3,8 @@
 
 *Official code repository for the EMNLP submission.*
 
+[![Dataset on Zenodo](https://img.shields.io/badge/Dataset-Zenodo-blue)](https://zenodo.org/records/20033927)
+
 ---
 
 ## Overview

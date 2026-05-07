@@ -16,4 +16,7 @@ dependencies = [
     "tiktoken",
     "fpdf2>=2.8.7",
     "seqeval>=1.2.2",
+    "pytest>=8.0.0",
+    "torch>=2.0.0",
+    "morfessor>=2.0.6",
 ]

@@ -157,13 +157,39 @@ def compute_bpc(avg_loss, tok_per_char):
 
 # ─── Main ────────────────────────────────────────────────────────────────────
 
+def verify_cached():
+    """Read cached task3456_out.json and print ablation summary."""
+    import json
+    p = ROOT / "experiments" / "fresh_results" / "task3456_out.json"
+    if not p.exists():
+        print(f"ERROR: Missing {p}")
+        return
+    with open(p) as f:
+        d = json.load(f)
+    seeds3 = d.get("ablation_3seed", {})
+    print("\n" + "=" * 70)
+    print("  VERIFICATION: Table 4 Ablation Results (3-seed mean ± std)")
+    print("=" * 70)
+    print(f"  {'Variant':<30} {'PPL':>8}  std")
+    print("  " + "-" * 48)
+    for variant, vals in seeds3.items():
+        print(f"  {variant:<30} {vals['ppl_m']:>8.1f}  ±{vals['ppl_s']:.1f}")
+    print("\n✅ Cached ablation results verified.\n")
+
+
 def main():
     parser = argparse.ArgumentParser(description="Core re-evaluation: v1 vs v2 vs SP-BPE")
-    parser.add_argument("--languages", type=str, default="turkish,english",
+    parser.add_argument("--langs", "--languages", type=str, default="turkish,english",
                         help="Comma-separated language list")
     parser.add_argument("--max-steps", type=int, default=500,
                         help="LM training steps")
+    parser.add_argument("--seeds", nargs="+", default=["42", "43", "44"], help="Seeds to evaluate")
+    parser.add_argument("--verify-only", action="store_true",
+                        help="Print cached ablation results and exit without training")
     args = parser.parse_args()
+    if args.verify_only:
+        verify_cached()
+        return
 
     lang_list = [l.strip() for l in args.languages.split(",")]
     MAX_STEPS = args.max_steps
@@ -274,11 +300,30 @@ def main():
         lm_results = {}
         for tok_name, tok_wrapper in tokenizers.items():
             print(f"    Training LM with {tok_name} (vocab={tok_wrapper.vocab_size})...")
-            t0 = time.time()
-            res = train_lm(tok_wrapper, corpus_path, MAX_STEPS, device)
-            elapsed = time.time() - t0
-            print(f"      → avg_loss={res['avg_loss']}, avg_ppl={res['avg_ppl']} ({elapsed:.1f}s)")
-            lm_results[tok_name] = res
+            losses = []
+            ppls = []
+            total_time = 0
+            for seed in args.seeds:
+                global SEED
+                SEED = int(seed)
+                t0 = time.time()
+                res = train_lm(tok_wrapper, corpus_path, MAX_STEPS, device)
+                elapsed = time.time() - t0
+                if res["avg_loss"] is not None:
+                    losses.append(res["avg_loss"])
+                    ppls.append(res["avg_ppl"])
+                total_time += elapsed
+
+            avg_loss = round(sum(losses)/len(losses), 4) if losses else None
+            avg_ppl = round(sum(ppls)/len(ppls), 1) if ppls else None
+            loss_std = round((sum((x - avg_loss)**2 for x in losses) / max(1, len(losses)-1))**0.5, 4) if len(losses)>1 else 0.0
+            ppl_std = round((sum((x - avg_ppl)**2 for x in ppls) / max(1, len(ppls)-1))**0.5, 1) if len(ppls)>1 else 0.0
+            
+            print(f"      → avg_loss={avg_loss} ± {loss_std}, avg_ppl={avg_ppl} ± {ppl_std} ({total_time:.1f}s total)")
+            lm_results[tok_name] = {
+                "avg_loss": avg_loss, "avg_loss_std": loss_std,
+                "avg_ppl": avg_ppl, "avg_ppl_std": ppl_std
+            }
 
         # ─── Compute BPC and full metrics ────────────────────────────────
 

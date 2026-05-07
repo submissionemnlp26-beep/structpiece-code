@@ -8,7 +8,7 @@ datasets/
 .DS_Store
 experiments/outputs/
 cpp/build/
-models/
+/models/
 uv.lock
 .cache/
 build/

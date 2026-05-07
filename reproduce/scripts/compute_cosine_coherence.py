@@ -93,6 +93,7 @@ def run_analysis(base_model: str, surgery_checkpoint: str):
 
     base_tokenizer = AutoTokenizer.from_pretrained(base_model)
     base_vocab = base_tokenizer.get_vocab()
+    surgery_tokenizer = AutoTokenizer.from_pretrained(surgery_checkpoint)
 
     # For each surgery token, compute cosine similarity between
     # the mean-pooled base embedding and the surgery embedding
@@ -100,12 +101,22 @@ def run_analysis(base_model: str, surgery_checkpoint: str):
     for idx in range(surgery_embeds.shape[0]):
         surgery_vec = surgery_embeds[idx]
         # The mean-pooled initialization vector from the base model
-        # would be computed via the same greedy decomposition in surgery_init.py
-        # Here we compare the post-training surgery embedding against its
-        # constituent source embeddings
+        # using the actual constituent base tokens of the surgery token
+        tok_str = surgery_tokenizer.convert_ids_to_tokens(idx)
+        if tok_str is None:
+            continue
+            
+        # Remove SentencePiece '_' prefix if present for cleaner matching, or just encode directly
+        # LLaMA tokenizers handle this.
+        base_ids = base_tokenizer.encode(tok_str, add_special_tokens=False)
+        if not base_ids:
+            continue
+            
+        base_pool = base_embeds[base_ids].mean(dim=0)
+        
         cos = torch.nn.functional.cosine_similarity(
             surgery_vec.unsqueeze(0),
-            base_embeds[:min(idx + 1, base_embeds.shape[0])].mean(dim=0).unsqueeze(0)
+            base_pool.unsqueeze(0)
         ).item()
         cosine_sims.append(cos)
 

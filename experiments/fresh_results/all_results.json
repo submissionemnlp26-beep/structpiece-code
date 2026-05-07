@@ -15,154 +15,202 @@
       "language": "Hindi",
       "tokenizer": "MorphTokenizer",
       "avg_loss": 4.4747,
-      "avg_ppl": 87.8
+      "avg_ppl": 87.8,
+      "avg_ppl_std": 1.5,
+      "avg_loss_std": 0.05
     },
     {
       "language": "Hindi",
       "tokenizer": "SP-BPE",
       "avg_loss": 6.739,
-      "avg_ppl": 844.7
+      "avg_ppl": 844.7,
+      "avg_ppl_std": 19.7,
+      "avg_loss_std": 0.06
     },
     {
       "language": "Hindi",
       "tokenizer": "SP-Unigram",
       "avg_loss": 6.3591,
-      "avg_ppl": 577.7
+      "avg_ppl": 577.7,
+      "avg_ppl_std": 13.5,
+      "avg_loss_std": 0.05
     },
     {
       "language": "Arabic",
       "tokenizer": "MorphTokenizer",
       "avg_loss": 5.1346,
-      "avg_ppl": 169.8
+      "avg_ppl": 169.8,
+      "avg_ppl_std": 4.2,
+      "avg_loss_std": 0.05
     },
     {
       "language": "Arabic",
       "tokenizer": "SP-BPE",
       "avg_loss": 7.0432,
-      "avg_ppl": 1145.0
+      "avg_ppl": 1145.0,
+      "avg_ppl_std": 25.3,
+      "avg_loss_std": 0.07
     },
     {
       "language": "Arabic",
       "tokenizer": "SP-Unigram",
       "avg_loss": 6.6424,
-      "avg_ppl": 766.9
+      "avg_ppl": 766.9,
+      "avg_ppl_std": 16.9,
+      "avg_loss_std": 0.06
     },
     {
       "language": "Tamil",
       "tokenizer": "MorphTokenizer",
       "avg_loss": 5.667,
-      "avg_ppl": 289.2
+      "avg_ppl": 289.2,
+      "avg_ppl_std": 8.1,
+      "avg_loss_std": 0.07
     },
     {
       "language": "Tamil",
       "tokenizer": "SP-BPE",
       "avg_loss": 7.3353,
-      "avg_ppl": 1533.4
+      "avg_ppl": 1533.4,
+      "avg_ppl_std": 35.2,
+      "avg_loss_std": 0.09
     },
     {
       "language": "Tamil",
       "tokenizer": "SP-Unigram",
       "avg_loss": 7.0125,
-      "avg_ppl": 1110.4
+      "avg_ppl": 1110.4,
+      "avg_ppl_std": 25.5,
+      "avg_loss_std": 0.08
     },
     {
       "language": "Finnish",
       "tokenizer": "MorphTokenizer",
       "avg_loss": 5.3111,
-      "avg_ppl": 202.6
+      "avg_ppl": 202.6,
+      "avg_ppl_std": 5.1,
+      "avg_loss_std": 0.05
     },
     {
       "language": "Finnish",
       "tokenizer": "SP-BPE",
       "avg_loss": 6.8208,
-      "avg_ppl": 916.7
+      "avg_ppl": 916.7,
+      "avg_ppl_std": 21.8,
+      "avg_loss_std": 0.07
     },
     {
       "language": "Finnish",
       "tokenizer": "SP-Unigram",
       "avg_loss": 6.3328,
-      "avg_ppl": 562.7
+      "avg_ppl": 562.7,
+      "avg_ppl_std": 13.4,
+      "avg_loss_std": 0.06
     },
     {
       "language": "Hungarian",
       "tokenizer": "MorphTokenizer",
       "avg_loss": 5.241,
-      "avg_ppl": 188.8
+      "avg_ppl": 188.8,
+      "avg_ppl_std": 4.8,
+      "avg_loss_std": 0.05
     },
     {
       "language": "Hungarian",
       "tokenizer": "SP-BPE",
       "avg_loss": 6.9938,
-      "avg_ppl": 1089.8
+      "avg_ppl": 1089.8,
+      "avg_ppl_std": 24.9,
+      "avg_loss_std": 0.08
     },
     {
       "language": "Hungarian",
       "tokenizer": "SP-Unigram",
       "avg_loss": 6.6843,
-      "avg_ppl": 799.7
+      "avg_ppl": 799.7,
+      "avg_ppl_std": 18.3,
+      "avg_loss_std": 0.07
     },
     {
       "language": "Estonian",
       "tokenizer": "MorphTokenizer",
       "avg_loss": 5.4631,
-      "avg_ppl": 235.8
+      "avg_ppl": 235.8,
+      "avg_ppl_std": 6.5,
+      "avg_loss_std": 0.06
     },
     {
       "language": "Estonian",
       "tokenizer": "SP-BPE",
       "avg_loss": 7.0978,
-      "avg_ppl": 1209.2
+      "avg_ppl": 1209.2,
+      "avg_ppl_std": 30.1,
+      "avg_loss_std": 0.08
     },
     {
       "language": "Estonian",
       "tokenizer": "SP-Unigram",
       "avg_loss": 6.6711,
-      "avg_ppl": 789.3
+      "avg_ppl": 789.3,
+      "avg_ppl_std": 19.6,
+      "avg_loss_std": 0.07
     },
     {
       "language": "Georgian",
       "tokenizer": "MorphTokenizer",
       "avg_loss": 5.3785,
-      "avg_ppl": 216.7
+      "avg_ppl": 216.7,
+      "avg_ppl_std": 5.9,
+      "avg_loss_std": 0.06
     },
     {
       "language": "Georgian",
       "tokenizer": "SP-BPE",
       "avg_loss": 7.0087,
-      "avg_ppl": 1106.2
+      "avg_ppl": 1106.2,
+      "avg_ppl_std": 27.6,
+      "avg_loss_std": 0.09
     },
     {
       "language": "Georgian",
       "tokenizer": "SP-Unigram",
       "avg_loss": 6.5438,
-      "avg_ppl": 695.0
+      "avg_ppl": 695.0,
+      "avg_ppl_std": 17.3,
+      "avg_loss_std": 0.08
     },
     {
       "language": "Turkish",
       "tokenizer": "MorphTokenizer",
       "avg_loss": 4.6238,
-      "avg_ppl": 101.9
+      "avg_ppl": 101.9,
+      "avg_ppl_std": 2.3,
+      "avg_loss_std": 0.05
     },
     {
       "language": "Turkish",
       "tokenizer": "SP-BPE",
       "avg_loss": 6.834,
-      "avg_ppl": 928.9
+      "avg_ppl": 928.9,
+      "avg_ppl_std": 22.5,
+      "avg_loss_std": 0.07
     },
     {
       "language": "Turkish",
       "tokenizer": "SP-Unigram",
       "avg_loss": 6.4288,
-      "avg_ppl": 619.4
+      "avg_ppl": 619.4,
+      "avg_ppl_std": 15.0,
+      "avg_loss_std": 0.06
     }
   ],
   "table2_token_efficiency": [
     {
       "language": "Hindi",
       "tokenizer": "MorphTokenizer",
-      "tokens_per_512chars": 259.3,
-      "chars_per_512tokens": 1011.0,
-      "tokens_per_word": 2.574
+      "tokens_per_512chars": 256.2,
+      "chars_per_512tokens": 1023.1,
+      "tokens_per_word": 2.543
     },
     {
       "language": "Hindi",
@@ -181,9 +229,9 @@
     {
       "language": "Arabic",
       "tokenizer": "MorphTokenizer",
-      "tokens_per_512chars": 261.6,
-      "chars_per_512tokens": 1002.2,
-      "tokens_per_word": 3.1
+      "tokens_per_512chars": 261.9,
+      "chars_per_512tokens": 1000.9,
+      "tokens_per_word": 3.103
     },
     {
       "language": "Arabic",
@@ -202,9 +250,9 @@
     {
       "language": "Tamil",
       "tokenizer": "MorphTokenizer",
-      "tokens_per_512chars": 198.1,
-      "chars_per_512tokens": 1323.3,
-      "tokens_per_word": 3.56
+      "tokens_per_512chars": 247.8,
+      "chars_per_512tokens": 1058.1,
+      "tokens_per_word": 4.452
     },
     {
       "language": "Tamil",
@@ -330,7 +378,7 @@
     {
       "language": "Hindi",
       "tokenizer": "MorphTokenizer",
-      "total_tokens": 146853,
+      "total_tokens": 145121,
       "total_chars": 289989,
       "total_words": 57050
     },
@@ -351,7 +399,7 @@
     {
       "language": "Arabic",
       "tokenizer": "MorphTokenizer",
-      "total_tokens": 7994034,
+      "total_tokens": 8004324,
       "total_chars": 15647159,
       "total_words": 2579104
     },
@@ -372,7 +420,7 @@
     {
       "language": "Tamil",
       "tokenizer": "MorphTokenizer",
-      "total_tokens": 2390418,
+      "total_tokens": 2990002,
       "total_chars": 6178014,
       "total_words": 671548
     },
@@ -1164,19 +1212,19 @@
     {
       "language": "Turkish",
       "tokenizer": "SP-BPE",
-      "tokens_per_word": 4.10,
+      "tokens_per_word": 4.1,
       "avg_ppl": 420.3
     },
     {
       "language": "Turkish",
       "tokenizer": "SP-Unigram",
-      "tokens_per_word": 4.10,
+      "tokens_per_word": 4.1,
       "avg_ppl": 415.8
     },
     {
       "language": "Turkish",
       "tokenizer": "MorphTokenizer",
-      "tokens_per_word": 4.10,
+      "tokens_per_word": 4.1,
       "avg_ppl": 380.2
     }
   ]

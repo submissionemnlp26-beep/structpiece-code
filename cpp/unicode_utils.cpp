@@ -143,6 +143,18 @@ bool is_devanagari_nukta(uint32_t cp) {
     return cp == 0x093C;
 }
 
+// ─── Arabic checks ──────────────────────────────────────────────────────────
+
+bool is_arabic(uint32_t cp) {
+    return (cp >= 0x0600 && cp <= 0x06FF);
+}
+
+bool is_arabic_diacritic(uint32_t cp) {
+    return (cp >= 0x0610 && cp <= 0x061A) ||
+           (cp >= 0x064B && cp <= 0x065F) ||
+           cp == 0x0670;
+}
+
 // ─── Simplified Grapheme Cluster Splitting ──────────────────────────────────
 
 std::vector<std::string> split_grapheme_clusters(const std::string& utf8) {
@@ -173,6 +185,10 @@ std::vector<std::string> split_grapheme_clusters(const std::string& utf8) {
             }
             // A consonant after Halant joins (conjunct)
             if (is_devanagari_halant(prev) && is_devanagari_consonant(cp)) {
+                extends = true;
+            }
+        } else if (is_arabic(cp)) {
+            if (is_arabic_diacritic(cp)) {
                 extends = true;
             }
         }

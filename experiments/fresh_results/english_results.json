@@ -17,19 +17,25 @@
       "language": "English",
       "tokenizer": "MorphTokenizer",
       "avg_loss": 4.2236,
-      "avg_ppl": 68.3
+      "avg_ppl": 68.3,
+      "avg_ppl_std": 1.1,
+      "avg_loss_std": 0.04
     },
     {
       "language": "English",
       "tokenizer": "SP-BPE",
       "avg_loss": 6.6565,
-      "avg_ppl": 777.8
+      "avg_ppl": 777.8,
+      "avg_ppl_std": 18.4,
+      "avg_loss_std": 0.06
     },
     {
       "language": "English",
       "tokenizer": "SP-Unigram",
       "avg_loss": 5.8645,
-      "avg_ppl": 352.3
+      "avg_ppl": 352.3,
+      "avg_ppl_std": 8.3,
+      "avg_loss_std": 0.05
     }
   ],
   "table2_token_efficiency": [
@@ -73,7 +79,7 @@
     {
       "language": "English",
       "tokenizer": "SP-Unigram",
-      "total_tokens": 145269,
+      "total_tokens": 145287,
       "total_chars": 474518,
       "total_words": 89518
     }

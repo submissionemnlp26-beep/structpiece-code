@@ -114,7 +114,7 @@ def run_evaluation(model_path: str, variant: str, tasks: str):
 
     # Map task names to lm-eval task identifiers
     task_map = {
-        "xcsqa": ["xcopa_tr", "xcopa_hi", "xcopa_ar"],
+        "xcsqa": ["xcsqa_tr", "xcsqa_hi", "xcsqa_ar"],
         "hellaswag": ["hellaswag"],
         "arc_easy": ["arc_easy"],
     }

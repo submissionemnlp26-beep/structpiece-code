@@ -239,13 +239,8 @@ std::vector<std::string> TokenizerEngine::pretokenize(const std::string& text) c
 // ─── BPE application ────────────────────────────────────────────────────────
 
 std::vector<std::string> TokenizerEngine::apply_bpe(const std::string& word) const {
-    // Start with individual characters (UTF-8 code points)
-    auto cps = utf8_to_codepoints(word);
-    std::vector<std::string> symbols;
-    symbols.reserve(cps.size());
-    for (uint32_t cp : cps) {
-        symbols.push_back(codepoints_to_utf8({cp}));
-    }
+    // Start with Extended Grapheme Clusters (EGCs)
+    std::vector<std::string> symbols = split_grapheme_clusters(word);
 
     while (symbols.size() > 1) {
         // Find the pair with the lowest merge priority (highest rank)

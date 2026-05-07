@@ -26,7 +26,7 @@ sys.path.insert(0, str(ROOT / "python"))
 
 from lm.tokenizer_adapter import TokenizerWrapper
 from python.adaptive_bpe import train_bpe, IndicTokenizer
-from experiments.run_core_reeval import train_lm, compute_token_stats, compute_bpc
+from reproduce.run_core_reeval import train_lm, compute_token_stats, compute_bpc
 
 # ─── Configuration ───────────────────────────────────────────────────────────
 

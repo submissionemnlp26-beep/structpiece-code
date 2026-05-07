@@ -169,7 +169,7 @@ def run_evaluation(langs: list):
         for variant_name, boundary_fn in [
             ("mBERT Std", None),
             ("+SP-BPE", lambda w: sp_tok.Encode(w, out_type=str) if sp_tok else [w]),
-            ("+StructPiece", lambda w: morph_tok.tokenize(w) if morph_tok else [w]),
+            ("+StructPiece", lambda w: [morph_tok.id_to_token.get(i, "") for i in morph_tok.encode(w)] if morph_tok else [w]),
         ]:
             seed_f1s = []
             for seed in MBERT_CONFIG["seeds"]:

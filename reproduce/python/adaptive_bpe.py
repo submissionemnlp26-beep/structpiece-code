@@ -35,7 +35,7 @@ from typing import Dict, List, Optional, Set, Tuple
 from tqdm import tqdm
 
 # Local import – pretokenizer lives in the same package directory
-from python.pretokenizer import pretokenize, is_devanagari, normalize
+from python.pretokenizer import pretokenize, is_devanagari, normalize, grapheme_clusters
 
 
 # ─── Unsupervised Morphology Tracking ────────────────────────────────────────
@@ -234,8 +234,8 @@ def _build_word_freqs(corpus_path: str, max_lines: Optional[int] = None) -> Word
     # Convert each word string into a tuple of characters (initial symbols)
     word_freqs: WordFreqs = {}
     for word_str, freq in word_counter.items():
-        # Use list(word_str) to get individual Unicode characters
-        word_freqs[tuple(word_str)] = freq
+        # Use grapheme_clusters to get EGC atoms instead of codepoints
+        word_freqs[tuple(grapheme_clusters(word_str))] = freq
 
     return word_freqs
 
@@ -418,8 +418,8 @@ class IndicTokenizer:
             self._word_cache[token_str] = result
             return result
 
-        # Split into characters
-        symbols = list(token_str)
+        # Split into EGC atoms
+        symbols = grapheme_clusters(token_str)
         merge_priority = self.merge_priority  # local ref
 
         # --- Fast path: check if entire word is in vocab ---
